@@ -1,0 +1,89 @@
+.home .site-header {
+  position: absolute;
+  opacity: 0.8;
+}
+#mobile-nav {
+  background-color: $teal;
+  opacity: 1;
+  color: $lightgray;
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.site-header {
+  position: relative;
+  z-index: 3;
+  background: $teal;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  min-height: 40px;
+  position: absolute;
+  li {
+    text-transform: uppercase;
+    font-family: ff-scala-sans-pro, sans-serif;
+    list-style: none;
+  }
+  a {
+    color: $lightgray;
+  }
+}
+.custom-logo-link {
+  background-image: url("images/bahai-world-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 50px;
+}
+// .custom-logo-link {
+//   height: 40px;
+//   width: 60px;
+// }
+// img.custom-logo {
+//   height: 100%;
+//   width: 120%;
+// }
+
+#primary-menu {
+  flex-direction: column;
+  // height: 40px;
+  justify-content: space-evenly;
+  color: $lightgray;
+  margin-left: 50px;
+  li {
+    text-transform: uppercase;
+    font-family: ff-scala-sans-pro, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  a {
+    color: $lightgray;
+  }
+  .current-menu-item {
+    text-decoration: underline;
+  }
+}
+.secondary-nav {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 1px solid $lightgray;
+  padding-left: 20px;
+  margin-left: 40px;
+}
+.main-navigation {
+  width: auto;
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .site-header {
+    min-height: 140px;
+  }
+  .custom-logo-link {
+    height: 130px;
+    width: 170px;
+  }
+}
+
+// width="170px" height="138px"

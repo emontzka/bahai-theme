@@ -1,0 +1,28 @@
+.screen-reader-text {
+  display: none;
+}
+
+.container,
+.container-fluid {
+  max-width: 1120px;
+}
+
+body {
+  background: $lightgray;
+  color: $darkblue;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+a {
+  color: $darkgray;
+  &:visited {
+    color: $darkgray;
+  }
+  &:hover,
+  &:active {
+    color: $red;
+  }
+}
