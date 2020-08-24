@@ -10866,6 +10866,122 @@ a:hover, a:active {
   color: #7a0d1f;
 }
 
+.button {
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px 0 rgba(68, 68, 68, 0.5);
+  border-radius: none;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.25rem;
+  color: #fbfcfc;
+  text-transform: uppercase;
+  font-size: 0.87rem;
+  font-family: ff-scala-sans-pro, sans-serif;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button.primary {
+  background-color: #2d7085;
+}
+.button.primary:hover {
+  background-color: #7a0d1f;
+  color: #fbfcfc;
+}
+.button.reverse {
+  background-color: #fbfcfc;
+  color: #2d7085;
+}
+.button.reverse:hover {
+  background-color: #7a0d1f;
+  color: #fbfcfc;
+}
+
+@media (min-width: 992px) {
+  .button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+.row.pad-40 {
+  margin-right: -40px;
+  margin-left: -40px;
+}
+.row.pad-40 .col-xl,
+.row.pad-40 .col-xl-auto,
+.row.pad-40 .col-xl-12,
+.row.pad-40 .col-xl-11,
+.row.pad-40 .col-xl-10,
+.row.pad-40 .col-xl-9,
+.row.pad-40 .col-xl-8,
+.row.pad-40 .col-xl-7,
+.row.pad-40 .col-xl-6,
+.row.pad-40 .col-xl-5,
+.row.pad-40 .col-xl-4,
+.row.pad-40 .col-xl-3,
+.row.pad-40 .col-xl-2,
+.row.pad-40 .col-xl-1,
+.row.pad-40 .col-lg,
+.row.pad-40 .col-lg-auto,
+.row.pad-40 .col-lg-12,
+.row.pad-40 .col-lg-11,
+.row.pad-40 .col-lg-10,
+.row.pad-40 .col-lg-9,
+.row.pad-40 .col-lg-8,
+.row.pad-40 .col-lg-7,
+.row.pad-40 .col-lg-6,
+.row.pad-40 .col-lg-5,
+.row.pad-40 .col-lg-4,
+.row.pad-40 .col-lg-3,
+.row.pad-40 .col-lg-2,
+.row.pad-40 .col-lg-1,
+.row.pad-40 .col-md,
+.row.pad-40 .col-md-auto,
+.row.pad-40 .col-md-12,
+.row.pad-40 .col-md-11,
+.row.pad-40 .col-md-10,
+.row.pad-40 .col-md-9,
+.row.pad-40 .col-md-8,
+.row.pad-40 .col-md-7,
+.row.pad-40 .col-md-6,
+.row.pad-40 .col-md-5,
+.row.pad-40 .col-md-4,
+.row.pad-40 .col-md-3,
+.row.pad-40 .col-md-2,
+.row.pad-40 .col-md-1,
+.row.pad-40 .col-sm,
+.row.pad-40 .col-sm-auto,
+.row.pad-40 .col-sm-12,
+.row.pad-40 .col-sm-11,
+.row.pad-40 .col-sm-10,
+.row.pad-40 .col-sm-9,
+.row.pad-40 .col-sm-8,
+.row.pad-40 .col-sm-7,
+.row.pad-40 .col-sm-6,
+.row.pad-40 .col-sm-5,
+.row.pad-40 .col-sm-4,
+.row.pad-40 .col-sm-3,
+.row.pad-40 .col-sm-2,
+.row.pad-40 .col-sm-1,
+.row.pad-40 .col,
+.row.pad-40 .col-auto,
+.row.pad-40 .col-12,
+.row.pad-40 .col-11,
+.row.pad-40 .col-10,
+.row.pad-40 .col-9,
+.row.pad-40 .col-8,
+.row.pad-40 .col-7,
+.row.pad-40 .col-6,
+.row.pad-40 .col-5,
+.row.pad-40 .col-4,
+.row.pad-40 .col-3,
+.row.pad-40 .col-2,
+.row.pad-40 .col-1 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 body,
 p {
   font-family: adobe-caslon-pro, serif;
@@ -10968,6 +11084,79 @@ p {
 .h6 {
     font-size: 1.125rem;
     line-height: 1.625rem;
+  }
+}
+.article-link {
+  display: block;
+  text-decoration: none;
+}
+.article-link .article-thumb-container {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: 30px;
+}
+.article-link:hover {
+  text-decoration: none;
+  color: #7a0d1f;
+}
+.article-link:hover .article-thumb-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #7a0d1f;
+  opacity: 0.4;
+  z-index: 5;
+}
+
+.two-three-section > .row {
+  border-bottom: 1px solid #d3dfed;
+}
+.two-three-section > .row:first-child .two-three-article {
+  padding-top: 0;
+}
+
+.two-three-article {
+  position: relative;
+  padding-bottom: 70px;
+  border-right: 1px solid #d3dfed;
+  padding-top: 30px;
+}
+.two-three-article:last-child {
+  border-right: none;
+}
+
+.two-three-category {
+  position: absolute;
+  width: calc(100% - 80px);
+  left: 40px;
+  bottom: 20px;
+  border-bottom: 1px solid #01567a;
+}
+
+.statement {
+  background-color: #d3dfed;
+  padding: 50px 60px;
+}
+
+.statement-buttons {
+  margin-top: 30px;
+}
+.statement-buttons .button:first-child {
+  margin-right: 20px;
+}
+.statement-buttons .button {
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .statement .button {
+    display: inline-block;
   }
 }
 .home .site-header {

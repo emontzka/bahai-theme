@@ -6,12 +6,23 @@ $button_one_link = $lsa['button_one_link'] || '';
 $button_two_text = $lsa['button_two_text'];
 $button_two_link = $lsa['button_two_link'] || '';
 
-if ($lsa) { ?>
+if ($lsa) {?>
 
     <section class="row">
-        <div class="col-sm-12">
-        <?php echo $statement; ?>
+        <div class=" col-sm-12">
+            <div class="statement">
+            <?php echo $statement;
+    echo '<div class="statement-buttons">';
+    if ($button_one_text) {
+        echo '<a class="button primary" href="' . $button_one_link . '" >' . $button_one_text . '</a> ';
+    }
+    if ($button_two_text) {
+        echo '<a class="button reverse" href="' . $button_two_link . '" >' . $button_two_text . '</a> ';
+    }
+    echo '</div'; //statement-buttons
+     ?>
 
+            </div>
         </div>
     </section>
 <?php }

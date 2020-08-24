@@ -22,14 +22,15 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import "normalize";
-@import "bootstrap/bootstrap";
-@import "colors";
-@import "global";
-@import "typography";
-@import "header";
-@import "fonts";
-@import "fontawesome/fontawesome";
-@import "fontawesome/solid";
-@import "fontawesome/brands";
-@import "home";
+@import 'normalize';
+@import 'bootstrap/bootstrap';
+@import 'colors';
+@import 'global';
+@import 'typography';
+@import 'elements';
+@import 'header';
+@import 'fonts';
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'home';
