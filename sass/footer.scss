@@ -1,0 +1,63 @@
+.site-footer {
+  background-color: $teal;
+  padding: 15px 0;
+}
+.site-info {
+  color: $lightgray;
+  font-family: ff-scala-sans-pro, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    margin-bottom: 0;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    font-family: ff-scala-sans-pro, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.86px;
+    line-height: 1.5rem;
+    &.footer-logo {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
+      position: relative;
+      font-family: ACaslonPro-Semibold;
+      text-transform: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      //   right: -35px;
+
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+      //   :before {
+      //     content: '';
+      //     position: absolute;
+      //     width: 61px;
+      //     height: 59px;
+      //     background-image: url('images/bahai-footer.svg');
+      //     left: -66px;
+      //     top: -18px;
+      //   }
+    }
+  }
+  a {
+    color: $lightgray;
+  }
+}
+@media (min-width: 768px) {
+  .site-info {
+    // display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+    }
+  }
+}

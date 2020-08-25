@@ -21,7 +21,7 @@ if (!function_exists('bahai_setup')):
      * as indicating support for post thumbnails.
      */
     function bahai_setup()
-{
+    {
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
@@ -49,39 +49,31 @@ if (!function_exists('bahai_setup')):
         add_theme_support('post-thumbnails');
 
         // This theme uses wp_nav_menu() in one location.
-        register_nav_menus(
-            array(
-                'menu-1' => esc_html__('Primary', 'bahai'),
-            )
-        );
+        register_nav_menus([
+            'menu-1' => esc_html__('Primary', 'bahai'),
+        ]);
 
         /*
          * Switch default core markup for search form, comment form, and comments
          * to output valid HTML5.
          */
-        add_theme_support(
-            'html5',
-            array(
-                'search-form',
-                'comment-form',
-                'comment-list',
-                'gallery',
-                'caption',
-                'style',
-                'script',
-            )
-        );
+        add_theme_support('html5', [
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+            'style',
+            'script',
+        ]);
 
         // Set up the WordPress core custom background feature.
         add_theme_support(
             'custom-background',
-            apply_filters(
-                'bahai_custom_background_args',
-                array(
-                    'default-color' => 'ffffff',
-                    'default-image' => '',
-                )
-            )
+            apply_filters('bahai_custom_background_args', [
+                'default-color' => 'ffffff',
+                'default-image' => '',
+            ])
         );
 
         // Add theme support for selective refresh for widgets.
@@ -92,15 +84,12 @@ if (!function_exists('bahai_setup')):
          *
          * @link https://codex.wordpress.org/Theme_Logo
          */
-        add_theme_support(
-            'custom-logo',
-            array(
-                'height' => 250,
-                'width' => 250,
-                'flex-width' => true,
-                'flex-height' => true,
-            )
-        );
+        add_theme_support('custom-logo', [
+            'height' => 250,
+            'width' => 250,
+            'flex-width' => true,
+            'flex-height' => true,
+        ]);
     }
 endif;
 add_action('after_setup_theme', 'bahai_setup');
@@ -125,17 +114,15 @@ add_action('after_setup_theme', 'bahai_content_width', 0);
  */
 function bahai_widgets_init()
 {
-    register_sidebar(
-        array(
-            'name' => esc_html__('Sidebar', 'bahai'),
-            'id' => 'sidebar-1',
-            'description' => esc_html__('Add widgets here.', 'bahai'),
-            'before_widget' => '<section id="%1$s" class="widget %2$s">',
-            'after_widget' => '</section>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>',
-        )
-    );
+    register_sidebar([
+        'name' => esc_html__('Sidebar', 'bahai'),
+        'id' => 'sidebar-1',
+        'description' => esc_html__('Add widgets here.', 'bahai'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ]);
 }
 add_action('widgets_init', 'bahai_widgets_init');
 
@@ -144,14 +131,20 @@ add_action('widgets_init', 'bahai_widgets_init');
  */
 function bahai_scripts()
 {
-    wp_enqueue_style('bahai-style', get_stylesheet_uri(), array(), _S_VERSION);
+    wp_enqueue_style('bahai-style', get_stylesheet_uri(), [], _S_VERSION);
     wp_style_add_data('bahai-style', 'rtl', 'replace');
 
     // wp_enqueue_script('bahai-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
     // wp_enqueue_script('popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), null, true);
 
-    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+    wp_enqueue_script(
+        'bootstrap',
+        get_template_directory_uri() . '/js/bootstrap.bundle.min.js',
+        ['jquery'],
+        null,
+        true
+    );
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -192,3 +185,7 @@ function cc_mime_types($mimes)
     return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page();
+}

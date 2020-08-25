@@ -44,6 +44,8 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/content', 'article-rows'); ?>
 <?php get_template_part('template-parts/content', 'statement'); ?>
+<?php get_template_part('template-parts/content', 'collections-list'); ?>
+<?php echo do_shortcode('[contact-form-7 id="155" title="Contact form 1"]'); ?>
 
 
 		<?php if (have_posts()):
@@ -61,7 +63,8 @@ get_header(); ?>
       endwhile;
       the_posts_navigation();
   else:
-       // get_template_part('template-parts/content', 'none');
+
+      // get_template_part('template-parts/content', 'none');
   endif; ?>
 
 	</main><!-- #main -->

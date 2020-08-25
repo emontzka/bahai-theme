@@ -17,8 +17,6 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        // width: 1000px;
-        // height: 1000px;
         left: 0;
         top: 0;
         background-color: $red;
@@ -28,16 +26,7 @@
     }
   }
 }
-.two-three-section {
-  > .row {
-    border-bottom: 1px solid #d3dfed;
-    &:first-child {
-      .two-three-article {
-        padding-top: 0;
-      }
-    }
-  }
-}
+
 .two-three-article {
   position: relative;
   padding-bottom: 70px;
@@ -76,6 +65,24 @@
   .statement {
     .button {
       display: inline-block;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .two-three-section {
+    > .row {
+      border-bottom: 1px solid #d3dfed;
+      &:first-child {
+        .two-three-article {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .two-three-article {
+    border-right: 1px solid #d3dfed;
+    &:last-child {
+      border-right: none;
     }
   }
 }

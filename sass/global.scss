@@ -26,6 +26,9 @@ a {
     color: $red;
   }
 }
+.page {
+  margin-bottom: 0;
+}
 
 .button {
   padding: 10px 15px;
@@ -143,23 +146,21 @@ a {
   }
 }
 
-// background: #01567A;
-// box-shadow: 0 2px 5px 0 rgba(68,68,68,0.50);
-// font-family: Helvetica;
-// font-size: 16px;
-// color: #FBFCFC;
-// letter-spacing: 1px;
-// text-align: center;
-// line-height: 24px;
+.red-hover {
+  position: relative;
+  display: block;
+  &:hover {
+    &:before {
+      content: '<div></div>';
+      position: absolute;
+      width: 100%;
+      height: 100%;
 
-// background: #01567A;
-// box-shadow: 0 2px 5px 0 rgba(68,68,68,0.50);
-
-// font-family: Helvetica;
-// font-size: 16px;
-// color: #FBFCFC;
-// letter-spacing: 1px;
-// text-align: center;
-// line-height: 24px;
-
-// background: #D3E4ED;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      background-color: $red;
+      opacity: 0.4;
+    }
+  }
+}

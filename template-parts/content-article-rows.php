@@ -5,7 +5,7 @@ if (have_rows('article_rows')):
         the_row();
 
         $row_count = count(get_sub_field('articles'));
-        $bootstrap = $row_count === 2 ? 'col-lg-6' : 'col-lg-4';
+        $bootstrap = $row_count === 2 ? 'col-md-6' : 'col-md-4';
         echo '<div class="row pad-40">';
         while (have_rows('articles')):
 

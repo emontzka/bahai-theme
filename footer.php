@@ -8,27 +8,28 @@
  *
  * @package bahai
  */
-
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bahai' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'bahai' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bahai' ), 'bahai', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+				<div class="site-info">
+			<p><a href="">Contact</a> | <a href="">Legal</a> | <a href="">Privacy</a></p>
+			<p class="footer-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo bloginfo(
+    'template_directory'
+); ?>/images/bahai-footer.svg" /><span>The Bahá’í Faith</span></a></p>
+			<p>&copy; 2020 BAHÁ’Í INTERNATIONAL COMMUNITY</p>
 		</div><!-- .site-info -->
+				</div>
+			</div>
+		</div>
+		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
