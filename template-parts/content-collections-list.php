@@ -1,4 +1,6 @@
+
 <?php if (have_rows('collections_list')):
+
     while (have_rows('collections_list')):
         the_row();
 

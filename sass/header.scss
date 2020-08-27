@@ -19,7 +19,6 @@
   backdrop-filter: blur(5px);
   width: 100%;
   min-height: 40px;
-  position: absolute;
   li {
     text-transform: uppercase;
     font-family: ff-scala-sans-pro, sans-serif;
@@ -30,7 +29,7 @@
   }
 }
 .custom-logo-link {
-  background-image: url("images/bahai-world-logo.svg");
+  background-image: url('images/bahai-world-logo.svg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 40px;
