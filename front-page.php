@@ -45,7 +45,8 @@ get_header(); ?>
 <?php get_template_part('template-parts/content', 'article-rows'); ?>
 <?php get_template_part('template-parts/content', 'statement'); ?>
 <?php get_template_part('template-parts/content', 'collections-list'); ?>
-<?php echo do_shortcode('[contact-form-7 id="155" title="Contact form 1"]'); ?>
+<?php get_template_part('template-parts/content', 'subscribe'); ?>
+
 
 
 		<?php if (have_posts()):
@@ -69,5 +70,5 @@ get_header(); ?>
 
 	</main><!-- #main -->
     </div><!--container -->
-<?php // get_sidebar();
-get_footer();
+
+<?php get_footer();

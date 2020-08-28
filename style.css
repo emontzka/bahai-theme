@@ -11016,6 +11016,21 @@ a:hover, a:active {
   margin-top: auto;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.page-header {
+  background-color: #d3dfed;
+  padding: 80px 0;
+}
+
+.entry-content.pull {
+  margin-top: -80px;
+  background-color: #fbfcfc;
+  padding-top: 30px;
+}
+
 body,
 p {
   font-family: adobe-caslon-pro, serif;
@@ -11108,7 +11123,7 @@ blockquote {
   color: #444;
   line-height: 1.625rem;
   padding-left: 20px;
-  border-left: 1px solid #01567a;
+  border-left: 2px solid #01567a;
 }
 
 figcaption {
@@ -11117,7 +11132,6 @@ figcaption {
   color: #444;
   line-height: 1.125rem;
   padding-top: 10px;
-  border-top: 1px solid #01567a;
 }
 
 input[type=text] {
@@ -11241,6 +11255,10 @@ p.category {
   border-bottom: 1px solid #01567a;
 }
 
+.hover .two-three-category {
+  border-bottom: 1px solid #7a0d1f !important;
+}
+
 .statement {
   background-color: #d3dfed;
   padding: 50px 60px;
@@ -11256,6 +11274,40 @@ p.category {
   white-space: nowrap;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.subscribe-desktop {
+  background-color: #d3dfed;
+  padding: 30px;
+}
+.subscribe-desktop h3 {
+  text-align: center;
+}
+
+.post-hero .category {
+  margin-bottom: 30px;
+}
+
+.post-hero-row {
+  margin-top: 30px;
+}
+
+.bottom-rule {
+  width: calc(100% - 30px);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.top-rule {
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+}
+
+.post-image-row {
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -11301,6 +11353,8 @@ p.category {
   backdrop-filter: blur(5px);
   width: 100%;
   min-height: 40px;
+  margin-bottom: 50px;
+  height: 50px;
 }
 .site-header li {
   text-transform: uppercase;
@@ -11315,8 +11369,8 @@ p.category {
   background-image: url("images/bahai-world-logo.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40px;
-  width: 50px;
+  height: 50px;
+  width: 60px;
 }
 
 #primary-menu {
@@ -11339,11 +11393,22 @@ p.category {
 }
 
 .secondary-nav {
-  margin-left: 0;
-  padding-left: 0;
   border-left: 1px solid #fbfcfc;
   padding-left: 20px;
   margin-left: 40px;
+  font-size: 0.875rem;
+  margin-top: 20px;
+  height: 100px;
+}
+.secondary-nav i {
+  padding-left: 10px;
+}
+.secondary-nav li {
+  color: #fbfcfc;
+}
+.secondary-nav li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .main-navigation {
@@ -11351,14 +11416,97 @@ p.category {
   display: inline-block;
 }
 
+#primary-menu {
+  margin-top: 20px;
+}
+#primary-menu li {
+  margin-bottom: 11px;
+}
+
+.mobile-menu-button {
+  color: #fbfcfc;
+  font-size: 30px;
+  cursor: pointer;
+}
+.mobile-menu-button .fa-times {
+  display: none;
+}
+
+#mobileNav {
+  display: none;
+  background: #2d7085;
+  color: #fbfcfc;
+  z-index: 10;
+  position: relative;
+  top: -10px;
+}
+#mobileNav ul {
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#mobileNav .search-form {
+  margin: 30px 0;
+}
+#mobileNav .search-form label {
+  width: 100%;
+}
+#mobileNav .search-form input[type=submit] {
+  display: none;
+}
+#mobileNav .search-form input[type=search] {
+  width: 100%;
+  height: 40px;
+}
+
+@media (max-width: 991px) {
+  .menu-open.site-header {
+    opacity: 1;
+    background-color: #fbfcfc !important;
+  }
+  .menu-open .mobile-menu-button {
+    color: #2d7085;
+  }
+  .menu-open .mobile-menu-button .fa-bars {
+    display: none;
+  }
+  .menu-open .mobile-menu-button .fa-times {
+    display: inline-block !important;
+  }
+  .menu-open #mobileNav {
+    display: block;
+  }
+
+  .home .site-header {
+    margin-bottom: 0;
+  }
+  .home .site-header.menu-open {
+    opacity: 1;
+    background-color: #fbfcfc;
+  }
+
+  .secondary-nav-mobile {
+    font-size: 0.875rem;
+    color: #fbfcfc;
+  }
+}
 @media (min-width: 992px) {
   .site-header {
-    min-height: 140px;
+    height: 140px;
   }
 
   .custom-logo-link {
-    height: 130px;
+    height: 140px;
     width: 170px;
+  }
+
+  .mobile-menu-button {
+    display: none !important;
+  }
+
+  #mobileNav {
+    display: none !important;
   }
 }
 .site-footer {
@@ -11408,12 +11556,27 @@ p.category {
     justify-content: space-between;
   }
 }
+.category-widget ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.category-widget li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.form-widget {
+  background-color: #2d7085;
+  padding: 20px;
+  color: #fbfcfc;
+}
+
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-  src: url("../themes/bahai/fonts/webfonts/fa-brands-400.eot");
-  src: url("../themes/bahai/fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../themes/bahai/fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../themes/bahai/fonts/webfonts/fa-brands-400.woff") format("woff");
+  src: url("fonts/webfonts/fa-brands-400.eot");
+  src: url("fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("fonts/webfonts/fa-brands-400.woff") format("woff");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -11423,8 +11586,8 @@ p.category {
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 300;
-  src: url("../themes/bahai/fonts/webfonts/fa-light-300.eot");
-  src: url("../themes/bahai/fonts/webfonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../themes/bahai/fonts/webfonts/fa-light-300.woff2") format("woff2"), url("../themes/bahai/fonts/webfonts/fa-light-300.woff") format("woff");
+  src: url("fonts/webfonts/fa-light-300.eot");
+  src: url("fonts/webfonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("fonts/webfonts/fa-light-300.woff2") format("woff2"), url("fonts/webfonts/fa-light-300.woff") format("woff");
 }
 .fal {
   font-family: "Font Awesome 5 Pro";
@@ -11435,8 +11598,8 @@ p.category {
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("../themes/bahai/fonts/webfonts/fa-regular-400.eot");
-  src: url("../themes/bahai/fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../themes/bahai/fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../themes/bahai/fonts/webfonts/fa-regular-400.woff") format("woff");
+  src: url("fonts/webfonts/fa-regular-400.eot");
+  src: url("fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("fonts/webfonts/fa-regular-400.woff") format("woff");
 }
 .far {
   font-family: "Font Awesome 5 Pro";
@@ -11447,8 +11610,8 @@ p.category {
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 900;
-  src: url("../themes/bahai/fonts/webfonts/fa-solid-900.eot");
-  src: url("../themes/bahai/fonts/webfonts/fa-solid-900.eot") format("embedded-opentype"), url("../themes/bahai/fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../themes/bahai/fonts/webfonts/fa-solid-900.woff") format("woff");
+  src: url("fonts/webfonts/fa-solid-900.eot");
+  src: url("fonts/webfonts/fa-solid-900.eot") format("embedded-opentype"), url("fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("fonts/webfonts/fa-solid-900.woff") format("woff");
 }
 .fa,
 .fas {
@@ -11456,6 +11619,58 @@ p.category {
   font-weight: 900;
 }
 
+form.wpcf7-form {
+  display: block;
+}
+form.wpcf7-form p {
+  margin-bottom: 0;
+}
+form.wpcf7-form p input[type=text], form.wpcf7-form p input[type=email] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #123350;
+  height: 40px;
+}
+form.wpcf7-form p span, form.wpcf7-form p label {
+  width: 100%;
+}
+form.wpcf7-form p:nth-child(4) {
+  position: relative;
+  bottom: 10px;
+}
+form.wpcf7-form input[type=submit] {
+  background-color: #2d7085;
+  color: #fbfcfc;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: ff-scala-sans-pro, sans-serif;
+}
+form.wpcf7-form div.wpcf7 .ajax-loader {
+  display: none !important;
+  position: absolute;
+}
+
+@media (min-width: 850px) {
+  form.wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  form.wpcf7-form p {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+  form.wpcf7-form p:nth-child(4) {
+    flex-grow: 0;
+  }
+  form.wpcf7-form .wpcf7-response-output {
+    width: 100%;
+  }
+  form.wpcf7-form input[type=submit] {
+    margin-top: 0;
+    position: relative;
+  }
+}
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

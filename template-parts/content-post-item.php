@@ -7,6 +7,6 @@
 } ?>
 <p class="author">By <?php the_author_meta( 'display_name'); ?></p>
 <p class="category " style="border-bottom: 1px solid black;"> <?php the_category( ' ' );  ?></p>
-<!-- </div> -->
+
 </div><!--bottom-align-->
 </div><!--col-lg-->

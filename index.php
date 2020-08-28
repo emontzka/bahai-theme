@@ -78,7 +78,7 @@ $current_cat = get_the_category($featured_ID );
 		<?php if (have_posts()): ?>
       <div class="row">
           <div class="col-lg-3 col-md-4">
-          <p>Sidebar content.</p>
+          <?php get_sidebar(  ); ?>
           </div>
           <div class="col-lg-9 col-md-8">
           <div class="row">

@@ -8,6 +8,8 @@
  */
 
 get_header(); ?>
+
+
 	<?php
  $cats = get_terms([
      'taxonomy' => 'category',
@@ -39,7 +41,7 @@ get_header(); ?>
 			<section class="post-hero">
 			<div class="row">
 				<div class="col-lg-3 col-md-4" >
-				<p>(back link)</p>
+				<!-- <p>(back link)</p> -->
 				</div>
 				<div class="col-lg-9 col-md-8">
 					<p class="category"><a href="<?php echo $cat_link; ?>"><?php echo $current_cat->name; ?></a></p>
@@ -52,9 +54,11 @@ get_header(); ?>
 				
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-4">
-					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+			<div class="row  post-hero-row">
+				<div class="col-lg-3 col-md-4 position-relative">
+                <hr class="top-rule">
+                    <figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+                    <hr class="bottom-rule">
 				</div>
 				<div class="col-lg-9 col-md-8">
 				<?php bahai_post_thumbnail(); ?>

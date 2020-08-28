@@ -134,6 +134,8 @@ function bahai_scripts()
     wp_enqueue_style('bahai-style', get_stylesheet_uri(), [], _S_VERSION);
     wp_style_add_data('bahai-style', 'rtl', 'replace');
 
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'));
+
     // wp_enqueue_script('bahai-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
     // wp_enqueue_script('popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), null, true);

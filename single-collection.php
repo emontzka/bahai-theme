@@ -27,7 +27,7 @@ get_header(); ?>
       </div><!--row-->
       <div class="row">
           <div class="col-md-6">
-          <p><?php echo get_the_content(); ?></p>
+          <h4><?php echo get_the_content(); ?></h4>
           </div>
           <div class="col-md-6">
           <?php bahai_post_thumbnail(); ?>
@@ -37,7 +37,7 @@ get_header(); ?>
 
       <div class="row">
           <div class="col-lg-3 col-md-4">
-          sidebar
+          
           </div>
           <div class="col-lg-9 col-md-8">
           <div class="row">

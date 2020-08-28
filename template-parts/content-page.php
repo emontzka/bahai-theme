@@ -10,10 +10,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+<header class="page-header">
+<?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
+</header>
+<div class="container-fluid">
+        <div class="row">
+            
 
 
 
-	<div class="entry-content">
+
+	<div class="entry-content pull">
+    <div class="col-lg-10 offset-lg-1">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
@@ -36,5 +44,9 @@
        '</span>'
    ); ?>
 		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+    <?php endif; ?>
+    </div>
+        </div>
+    </div>
+
 </article><!-- #post-<?php the_ID(); ?> -->

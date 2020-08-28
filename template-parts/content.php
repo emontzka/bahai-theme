@@ -9,7 +9,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+<?php 
+$auth_name =  get_the_author_meta('display_name', $authorID); 
+$auth_desc = get_the_author_meta('description', $authorID); ?>
 
 
 	<div class="entry-content">
@@ -28,7 +30,9 @@
 			  <div class="row">
 			  <div class="col-lg-3 col-md-4" >
 				<?php if ($row_count === 1) {
- 
+          echo '<p class="author">By ' . $auth_name . '</p>'; 
+          echo '<figcaption>By ' . $auth_desc . '</figcaption>'; 
+
     } ?>
 			  </div>
 			  <div class="col-lg-9 col-md-8">
@@ -42,9 +46,11 @@
              //var_dump($img);
           elseif (get_row_layout() == 'full_width_image'):
               $img = get_sub_field('image'); ?>
-			  <div class="row">
-			  <div class="col-lg-3 col-md-4">
-				  <figcaption><?php echo $img['caption']; ?></figcaption>
+			  <div class="row post-image-row">
+			  <div class="col-lg-3 col-md-4 position-relative">
+        <hr class="top-rule">
+          <figcaption><?php echo $img['caption']; ?></figcaption>
+          <hr class="bottom-rule">
 			  </div>
 			  <div class="col-lg-9 col-md-8">
 				  <?php

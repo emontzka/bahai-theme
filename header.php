@@ -17,6 +17,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!-- <link rel="stylesheet" href="https://use.typekit.net/bob6elt.css"> -->
 	<link rel="stylesheet" href="https://use.typekit.net/plw6zor.css">
+	<script src="https://kit.fontawesome.com/0a2b3e6f0d.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -62,13 +63,14 @@
 			<div class="col-sm-2">
 				<div class="d-none d-lg-block">
 				<ul class="secondary-nav">
-					<li><a href="">Subscribe</a></li>
+					<li data-toggle="modal" data-target="#SubscribeForm">Subscribe</li>
 					<li><a href="">All Sites</a></li>
-					<li><a href="">Search</a></li>
+					<li ><a href="">Search<i class="fas fa-search"></i></a></li>
 					<!-- <i class="fas fa-lg fa-times"></i> -->
 				</ul>
 				</div>
 				<div class="navbar">
+					<div class="mobile-menu-button"><i class="fas fa-bars"></i><i class="fas fa-times"></i></div>
 <!-- <button class="navbar-toggler" type="button" data-togle="collapse" data-target="mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">menu button</button> -->
 				</div>
 
@@ -76,21 +78,26 @@
 			</div>
 			<!-- </div> -->
 		</div><!--container-fluid -->
-		<div id="mobileNav" class="collapse navbar-collapse">
+		<div id="mobileNav"> <!--collapse navbar-collapse--->
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-			<ul>
+			<!-- <ul>
 				<li>Special Collections</li>
 				<li>Library </li>
 				<li>About</li>
-			</ul>
+			</ul> -->
+		<?php wp_nav_menu([
+        'theme_location' => 'menu-1',
+        'menu_id' => 'primary-menu',
+    ]); ?>
 			<hr>
-			<ul>
+			<ul class="secondary-nav-mobile">
 				<li>Subscribe</li>
 				<li>All Sites</li>
 			</ul>
 			<hr>
+			<?php get_search_form( ); ?>
 			</div>
 				</div>
 			</div>

@@ -1,0 +1,53 @@
+form.wpcf7-form  {
+    display: block;
+    p {
+        margin-bottom: 0;
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid $darkblue;
+            height: 40px;
+        }
+        span, label{
+            width: 100%;
+        }
+    }
+    p:nth-child(4){
+        position: relative;
+        bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: $teal;
+        color: $lightgray;
+        margin-top: 30px;
+        text-transform: uppercase;
+        // width: 100%;
+        font-family: ff-scala-sans-pro, sans-serif;
+    }
+    div.wpcf7 .ajax-loader {
+        display: none !important;
+        position: absolute;
+    }
+}
+@media (min-width: 850px) {
+    form.wpcf7-form  {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        p {
+            flex-grow: 1;
+            margin-right: 15px;
+        }
+        p:nth-child(4) {
+            flex-grow: 0;
+        }
+        .wpcf7-response-output {
+            width: 100%;
+        }
+        input[type="submit"] {
+            margin-top: 0;
+            position: relative;
+            // bottom: -29px;
+        }
+    }
+}
