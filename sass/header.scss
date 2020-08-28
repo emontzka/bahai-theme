@@ -134,6 +134,12 @@
 }
 
 @media (max-width: 991px) {
+  .site-header {
+    .navbar {
+      position: absolute;
+      right: 0;
+    }
+  }
   .menu-open {
     &.site-header {
       opacity: 1;
