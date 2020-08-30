@@ -32,10 +32,10 @@ if (have_rows('two_or_three_articles')): ?>
 
         echo '<img src="" />';
     endif;?>
-																																											                </div>
-																																											                <div class="col-lg-6"></div>
-																																											            </div>
-																																											        <?php elseif (get_row_layout() == 'three_articles'):
+    </div>
+    <div class="col-lg-6"></div>
+</div>
+<?php elseif (get_row_layout() == 'three_articles'):
     echo "three articles";
 endif;
 endwhile;

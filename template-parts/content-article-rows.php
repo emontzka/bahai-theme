@@ -37,6 +37,8 @@ if (have_rows('article_rows')):
    if (get_sub_field('article_excerpt')) {
        echo '<p>' . the_sub_field('article_excerpt') . '</p>';
    }
+   
+   echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {
        echo '<p class="two-three-category">' . $category[0]->name . '</p>';
        // var_dump($category);

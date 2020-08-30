@@ -1,14 +1,15 @@
-.article-link {
+a.article-link {
   display: block;
-  text-decoration: none;
+  text-decoration: none !important;
   .article-thumb-container {
     position: relative;
     z-index: 1;
     display: block;
     margin-bottom: 30px;
   }
+ 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
     color: $red;
 
     .article-thumb-container {
@@ -26,15 +27,16 @@
     }
   }
 }
+a.article-link:hover {
+  text-decoration: none !important;
+}
 
 .two-three-article {
   position: relative;
   padding-bottom: 70px;
-  border-right: 1px solid #d3dfed;
+  
   padding-top: 30px;
-  &:last-child {
-    border-right: none;
-  }
+ 
 }
 
 .two-three-category {
@@ -51,7 +53,7 @@
 
 .statement {
   background-color: $lightblue;
-  padding: 50px 60px;
+  padding: 30px;
 }
 .statement-buttons {
   margin-top: 30px;
@@ -68,9 +70,7 @@
 .subscribe-desktop {
   background-color: $lightblue;
   padding: 30px;
-  h3 {
-    text-align: center;
-  }
+ 
 }
 
 .post-hero {
@@ -97,14 +97,36 @@
   margin-bottom: 1.5rem;
 }
 
+.featured-collection {
+  img {
+    margin-bottom: 50px;
+  }
+  h4 {
+    margin-bottom: 50px;
+  }
+  .button {
+    margin-bottom: 70px;
+  }
+}
+
+.special-collections {
+  margin-bottom: 50px;
+  img {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
 @media (min-width: 768px) {
   .statement {
     .button {
       display: inline-block;
     }
   }
-}
-@media (min-width: 992px) {
+  
   .two-three-section {
     > .row {
       border-bottom: 1px solid #d3dfed;
@@ -122,4 +144,11 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .statement {
+    padding: 50px 60px;
+  }
+}
+
 

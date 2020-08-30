@@ -56,12 +56,13 @@ $current_cat = get_the_category($featured_ID );
 
 	<main id="primary" class="site-main">
 		<div class="container-fluid">
+            <section>
 			<div class="rwo">
                 <div class="col-lg-12">
                 <h1><?php echo get_the_title($featured_ID); ?></h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-6">
                 <h4><?php echo $featured_subtitle; ?></h4>
                 <p><?php echo $featured_excerpt; ?></p>
@@ -70,8 +71,9 @@ $current_cat = get_the_category($featured_ID );
                 <?php echo '<p class="category"><a href="' . $cat_link . '" >' . $current_cat->name . '</a></p>'; ?>
                 </div>
                 <div class="col-lg-6"><?php echo get_the_post_thumbnail($featured_ID); ?></div>
-			</div>
-		</div>
+            </div>
+</section>
+
 
 
 

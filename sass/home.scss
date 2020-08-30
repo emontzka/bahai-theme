@@ -1,7 +1,7 @@
 .hero-area {
   position: relative;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 .hero-image-container {
   background-size: cover;
@@ -11,7 +11,7 @@
 }
 .hero-text-area {
   background-color: rgba(251, 252, 252, 0.8);
-  padding: 40px 30px;
+  padding: 15px;
   //   position: static;
 }
 .hero-text-container {
@@ -19,9 +19,15 @@
   position: static;
 }
 @media all and (min-width: 992px) {
+  .hero-area {
+    margin-bottom: 50px;
+  }
   .hero-text-container {
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+  .hero-text-area {
+    padding: 40px 30px;
   }
 }

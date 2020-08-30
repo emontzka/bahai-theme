@@ -38,12 +38,28 @@
         </button>
       </div>
       <div class="modal-body">
+        <?php //get_search_form( ); ?>
+        <?php echo do_shortcode('[contact-form-7 id="155" title="Contact form 1"]'); ?>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="SearchForm" tabindex="-1" role="dialog" aria-labelledby="SearchFormTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Search</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
         <?php get_search_form( ); ?>
+        
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+     
     </div>
   </div>
 </div>

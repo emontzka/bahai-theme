@@ -37,7 +37,7 @@ get_header(); ?>
 
       <div class="row">
           <div class="col-lg-3 col-md-4">
-          
+          <?php get_sidebar(  ); ?>
           </div>
           <div class="col-lg-9 col-md-8">
           <div class="row">
@@ -62,13 +62,19 @@ if( have_rows('collections') ):
         
         // var_dump($collection);
         // echo $col_cat[0]->name; ?>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 post-item">
+        <div class="bottom-align">
+        <a href="<?php echo $col_link; ?>" class="article-link">
+            <div class="article-thumb-container">
         <?php echo get_the_post_thumbnail( $col_ID ); ?>
+        </div>
         <h3><?php echo $col_title; ?></h3>
         <h4><?php echo $col_subtitle; ?></h4>
+</a>
         <p class="author">By <?php echo $col_author; ?></p>
         <p class="category"><?php echo $col_cat[0]->name; ?> </p>
         </div>
+</div>
 
       
 

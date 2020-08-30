@@ -68,7 +68,7 @@
 				<ul class="secondary-nav">
 					<li data-toggle="modal" data-target="#SubscribeForm">Subscribe</li>
 					<li><a href="">All Sites</a></li>
-					<li ><a href="">Search<i class="fas fa-search"></i></a></li>
+					<li data-toggle="modal" data-target="#SearchForm">Search<i class="fas fa-search"></i></li>
 					<!-- <i class="fas fa-lg fa-times"></i> -->
 				</ul>
 				</div>
@@ -88,7 +88,7 @@
     ]); ?>
 			<hr>
 			<ul class="secondary-nav-mobile">
-				<li>Subscribe</li>
+				<li  data-toggle="modal" data-target="#SubscribeForm" >Subscribe</li>
 				<li>All Sites</li>
 			</ul>
 			<hr>

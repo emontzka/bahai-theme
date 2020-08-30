@@ -15,8 +15,7 @@ $auth_desc = get_the_author_meta('description', $authorID); ?>
 
 
 	<div class="entry-content">
-  <?php //if (is_singular()) {echo 'is single post';} ?>
-  <?php //if (is_page()) {echo 'is page';} ?>
+
 
 		<?php if (have_rows('post_content')):
       //   echo 'has post content';
@@ -35,7 +34,7 @@ $auth_desc = get_the_author_meta('description', $authorID); ?>
 
     } ?>
 			  </div>
-			  <div class="col-lg-9 col-md-8">
+			  <div class="col-lg-9 col-md-8 text-section <?php echo $row_count === 1 ? 'first-text' : ''; ?>">
 				<?php echo $text; ?>
 				<?php the_field('text'); ?>
 			  </div>

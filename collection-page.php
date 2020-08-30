@@ -40,13 +40,16 @@ foreach($collections as $collection) {
 
 <div class="container-fluid">
 <div class="row">
-    <div class="offset-lg-1 col-lg-10">
+    <div class="offset-lg-1 col-lg-10 featured-collection">
     <h1 class="text-center"><?php echo get_the_title($featured_ID); ?></h1>
     <?php echo get_the_post_thumbnail($featured_ID); ?>
     <h4 class="text-center"><?php echo $featured_post[0]->post_content;?></h4>
+    <div class="d-flex justify-content-center">
+
+    
     <a class="button primary text-center" href="<?php echo get_the_permalink($featured_ID); ?>">Explore the Collection</a>
 
-
+    </div>
     </div>
 </div>
 

@@ -21,6 +21,7 @@ get_header(); ?>
         $authorID = $featured->post_author;
         $title = get_the_title($featured->ID);
         $thumb = get_the_post_thumbnail_url();
+        $feat_link = get_the_permalink( $featured->ID );
         ?>
 
 <div class="hero-area" >
@@ -29,9 +30,9 @@ get_header(); ?>
     <div class="container-fluid">
     <div class="row">
         <div class="col-lg-7 hero-text-area">
-            <h2 class="h1"><?php echo $title; ?></h2>
+            <a href="<?php echo $feat_link; ?>"><h2 class="h1"><?php echo $title; ?></h2></a>
             <p><?php echo $f_excerpt; ?></p>
-            <p>By <?php echo the_author_meta('display_name', $authorID); ?></p>
+            <p class="author">By <?php echo the_author_meta('display_name', $authorID); ?></p>
         </div>
     </div>
     </div>

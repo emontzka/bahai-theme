@@ -11,25 +11,7 @@ get_header(); ?>
 
 
 	<?php
- $cats = get_terms([
-     'taxonomy' => 'category',
-     'hide_empty' => true,
-     'exclude' => [1],
- ]);
- $cat_output = '';
- if ($cats) {
-     $cat_output .= '<ul>';
-     foreach ($cats as $cat) {
-         $cat_output .=
-             '<li><a href="' .
-             esc_url(get_term_link($cat)) .
-             '">' .
-             $cat->name .
-             '</a></li>';
-     }
-     $cat_output .= '</ul>';
-     //  echo 'Cat output: <br>' . $cat_output;
- }
+
 
  $current_cat = get_the_category();
  $current_cat = $current_cat[0]; // name, description, cat_ID,

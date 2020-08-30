@@ -5,7 +5,7 @@
         the_row();
 
         $col_list_title = get_sub_field('collections_title');
-        echo '<secion class="collections-list">';
+        echo '<section class="collections-list">';
         if ($col_list_title): ?>
         
 <div class="row">
@@ -38,4 +38,6 @@
             echo '</div>'; //row
         endif;
     endwhile;
-endif;
+endif; ?>
+</section>
+

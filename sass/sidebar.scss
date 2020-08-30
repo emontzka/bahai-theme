@@ -1,4 +1,8 @@
 .category-widget {
+    margin-bottom: 50px;
+    h5 {
+        margin-bottom: 50px;
+    }
     ul {
         margin-left: 0;
         padding-left: 0;
@@ -10,7 +14,13 @@
 }
 
 .form-widget {
-    background-color: $teal;
+    background-color: $lightblue;
     padding: 20px;
-    color: $lightgray;
+    color: $teal;
+    .button {
+        margin-top: 30px;
+    }
+    h5 {
+        color: $teal;
+    }
 }
