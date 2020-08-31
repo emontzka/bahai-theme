@@ -73,6 +73,10 @@ a.article-link:hover {
  
 }
 
+.post-actions {
+  margin-top: 30px;
+}
+
 .post-hero {
   .category {
     margin-bottom: 30px;
@@ -120,6 +124,10 @@ a.article-link:hover {
   }
 }
 
+.print-button {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .statement {
     .button {
@@ -141,6 +149,30 @@ a.article-link:hover {
     border-right: 1px solid #d3dfed;
     &:last-child {
       border-right: none;
+    }
+  }
+}
+
+.share-button-container {
+  .share-button {
+    .fa-chevron-up {
+      display: none;
+    }
+  }
+  .wp-share-button {
+    display: none;
+  }
+  &.show-buttons {
+    .share-button {
+      .fa-chevron-up {
+        display: inline;
+      }
+      .fa-chevron-down {
+        display: none;
+      }
+    }
+    .wp-share-button {
+      display: block;
     }
   }
 }

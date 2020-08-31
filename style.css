@@ -11319,6 +11319,10 @@ a.article-link:hover {
   padding: 30px;
 }
 
+.post-actions {
+  margin-top: 30px;
+}
+
 .post-hero .category {
   margin-bottom: 30px;
 }
@@ -11366,6 +11370,10 @@ a.article-link:hover {
   flex-direction: row-reverse;
 }
 
+.print-button {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .statement .button {
     display: inline-block;
@@ -11385,6 +11393,22 @@ a.article-link:hover {
     border-right: none;
   }
 }
+.share-button-container .share-button .fa-chevron-up {
+  display: none;
+}
+.share-button-container .wp-share-button {
+  display: none;
+}
+.share-button-container.show-buttons .share-button .fa-chevron-up {
+  display: inline;
+}
+.share-button-container.show-buttons .share-button .fa-chevron-down {
+  display: none;
+}
+.share-button-container.show-buttons .wp-share-button {
+  display: block;
+}
+
 @media (min-width: 992px) {
   .statement {
     padding: 50px 60px;

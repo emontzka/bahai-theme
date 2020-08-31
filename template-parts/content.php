@@ -11,7 +11,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php 
 $auth_name =  get_the_author_meta('display_name', $authorID); 
-$auth_desc = get_the_author_meta('description', $authorID); ?>
+$auth_desc = get_the_author_meta('description', $authorID); 
+$pdf = get_field('post_pdf'); ?>
 
 
 	<div class="entry-content">
@@ -29,8 +30,20 @@ $auth_desc = get_the_author_meta('description', $authorID); ?>
 			  <div class="row">
 			  <div class="col-lg-3 col-md-4" >
 				<?php if ($row_count === 1) {
+          
           echo '<p class="author">By ' . $auth_name . '</p>'; 
-          echo '<figcaption>By ' . $auth_desc . '</figcaption>'; 
+          echo '<figcaption>' . $auth_desc . '</figcaption>'; 
+          $share_buttons = '<div class="share-button-container"><p class="author post-actions"><span class="share-button">Share<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></span>'; 
+          $share_buttons .= '<span class="print-button">Print<i class="fas fa-print"></i></span>';
+          if ($pdf) {
+            $share_buttons .= '<a href="' . $pdf['url'] . '" target="_blank">Save<i class="fas fa-download"></i></a>';
+          }
+          $share_buttons .= '</p>';
+          echo $share_buttons;
+
+           //'<p class="author post-actions"><span>Share<i class="fas fa-chevron-down"></i></span> <span class="print-button">Print<i class="fas fa-print"></i></span> Save<i class="fas fa-download"></i></p>';
+          echo do_shortcode("[social_share_button themes='theme1']"); 
+          echo '</div>';
 
     } ?>
 			  </div>
