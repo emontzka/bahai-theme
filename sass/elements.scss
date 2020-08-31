@@ -153,8 +153,11 @@ a.article-link:hover {
   }
 }
 
+
+
 .share-button-container {
   .share-button {
+    cursor: pointer;
     .fa-chevron-up {
       display: none;
     }

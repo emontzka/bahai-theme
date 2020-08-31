@@ -17,7 +17,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!-- <link rel="stylesheet" href="https://use.typekit.net/bob6elt.css"> -->
 	<link rel="stylesheet" href="https://use.typekit.net/plw6zor.css">
-	<script src="https://kit.fontawesome.com/0a2b3e6f0d.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://kit.fontawesome.com/0a2b3e6f0d.js" crossorigin="anonymous"></script> -->
 
 	<?php wp_head(); ?>
 </head>
