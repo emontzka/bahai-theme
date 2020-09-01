@@ -128,33 +128,6 @@ a.article-link:hover {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .statement {
-    .button {
-      display: inline-block;
-    }
-  }
-  
-  .two-three-section {
-    > .row {
-      border-bottom: 1px solid #d3dfed;
-      &:first-child {
-        .two-three-article {
-          padding-top: 0;
-        }
-      }
-    }
-  }
-  .two-three-article {
-    border-right: 1px solid #d3dfed;
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-
-
-
 .share-button-container {
   .share-button {
     cursor: pointer;
@@ -180,10 +153,59 @@ a.article-link:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .statement {
+    .button {
+      display: inline-block;
+    }
+  }
+  
+  .two-three-section {
+    > .row {
+      border-bottom: 1px solid #d3dfed;
+      &:first-child {
+        .two-three-article {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .two-three-article {
+    border-right: 1px solid #d3dfed;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .collections-list {
+    border-bottom: 1px solid #d3dfed;
+    .row.pad-40 {
+      border-bottom: 1px solid #d3dfed;
+    }
+  }
+  .collection-item {
+    border-right: 1px solid #d3dfed;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+} // min-width 768
+
+
+
+
 @media (min-width: 992px) {
   .statement {
     padding: 50px 60px;
   }
+  // .collections-list {
+  //   .collection-item {
+
+  //   }
+  // }
 }
 
 

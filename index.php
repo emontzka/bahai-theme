@@ -59,16 +59,19 @@ $current_cat = get_the_category($featured_ID );
             <section>
 			<div class="rwo">
                 <div class="col-lg-12">
+                    
                 <h1><?php echo get_the_title($featured_ID); ?></h1>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-lg-6">
+                    <div class="bottom-align">
                 <h4><?php echo $featured_subtitle; ?></h4>
                 <p><?php echo $featured_excerpt; ?></p>
                 <p class="author">By <?php echo $featured_author;  ?></p>
                 
-                <?php echo '<p class="category"><a href="' . $cat_link . '" >' . $current_cat->name . '</a></p>'; ?>
+                <?php echo '<p class="category"  style="border-bottom: 1px solid black;"><a href="' . $cat_link . '" >' . $current_cat->name . '</a></p>'; ?>
+                </div>
                 </div>
                 <div class="col-lg-6"><?php echo get_the_post_thumbnail($featured_ID); ?></div>
             </div>

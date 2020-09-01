@@ -20,6 +20,8 @@ $pdf = get_field('post_pdf'); ?>
 
 		<?php if (have_rows('post_content')):
       //   echo 'has post content';
+      $gfo = get_field_object('post_content');
+      $gfo_count = count($gfo['value']);
       $row_count = 1;
       while (have_rows('post_content')):
           the_row();
@@ -40,14 +42,17 @@ $pdf = get_field('post_pdf'); ?>
           }
           $share_buttons .= '</p>';
           echo $share_buttons;
-
-           //'<p class="author post-actions"><span>Share<i class="fas fa-chevron-down"></i></span> <span class="print-button">Print<i class="fas fa-print"></i></span> Save<i class="fas fa-download"></i></p>';
           echo do_shortcode("[social_share_button themes='theme1']"); 
           echo '</div>';
 
     } ?>
-			  </div>
-			  <div class="col-lg-9 col-md-8 text-section <?php echo $row_count === 1 ? 'first-text' : ''; ?>">
+        </div>
+        <?php $text_class = "";
+        if ($row_count === 1) {
+          $text_class = 'first-text'; 
+        } elseif ($row_count === $gfo_count) {
+          $text_class = 'last-text'; }?>
+			  <div class="col-lg-9 col-md-8 text-section <?php echo $text_class; ?>">
 				<?php echo $text; ?>
 				<?php the_field('text'); ?>
 			  </div>

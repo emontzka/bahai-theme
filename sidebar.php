@@ -28,7 +28,7 @@ $cats = get_terms([
       echo $cat_output;
  }
 
- $form_title = get_field('form_title', 'option');
+ $form_title = get_field('sidebar_form_title', 'option');
  $form_description = get_field('form_description', 'option');
 ?>
 

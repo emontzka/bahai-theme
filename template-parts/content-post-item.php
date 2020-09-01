@@ -1,7 +1,7 @@
 <div class="col-lg-4 col-md-6 post-item">
 <div class="bottom-align">
     <a href="<?php the_permalink(  ); ?>" class="article-link">
-        <div class="article-thumb-container">
+<div class="article-thumb-container">
 <?php the_post_thumbnail( ); ?>
 </div>
 <h3><?php the_title(); ?></h3>
@@ -13,4 +13,4 @@
 <p class="category " style="border-bottom: 1px solid black;"> <?php the_category( ' ' );  ?></p>
 
 </div><!--bottom-align-->
-</div><!--col-lg-->
+</div><!--col-lg post item-->
