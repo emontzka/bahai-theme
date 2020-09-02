@@ -66,17 +66,18 @@ padding-bottom: 20px;
   margin-top: 30px;
   .button:first-child {
     margin-right: 20px;
+    margin-bottom: 20px;
   }
   .button {
     // display: block;
     white-space: nowrap;
     display: inline-block;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 }
 .subscribe-desktop {
   background-color: $lightblue;
-  padding: 30px;
+  padding: 65px;
  
 }
 
@@ -169,8 +170,14 @@ padding-bottom: 20px;
 
 @media (min-width: 768px) {
   .statement {
+    padding: 65px;
     .button {
       display: inline-block;
+    }
+  }
+  .statement-buttons {
+    .button:first-child {
+      margin-bottom: 0;
     }
   }
   
@@ -214,9 +221,9 @@ padding-bottom: 20px;
 
 
 @media (min-width: 992px) {
-  .statement {
-    padding: 65px 65px 45px;
-  }
+  // .statement {
+  //   padding: 65px ;
+  // }
   // .collections-list {
   //   .collection-item {
 

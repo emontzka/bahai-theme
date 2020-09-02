@@ -32,11 +32,12 @@ if (have_rows('article_rows')):
    if ($subtitle) {
        echo '<h4>' . esc_html($subtitle) . '</h4>';
    }
-   echo '</a>';
+   
 
    if (get_sub_field('article_excerpt')) {
        echo '<p>' . the_sub_field('article_excerpt') . '</p>';
    }
+   echo '</a>';
    
    echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {

@@ -11256,6 +11256,10 @@ h3,
   font-size: 2rem;
   line-height: 2.375rem;
 }
+h3.blue,
+.h3.blue {
+  color: #01567a;
+}
 
 h4,
 .h4 {
@@ -11472,16 +11476,16 @@ a.article-link:hover {
 }
 .statement-buttons .button:first-child {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .statement-buttons .button {
   white-space: nowrap;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .subscribe-desktop {
   background-color: #d3dfed;
-  padding: 30px;
+  padding: 65px;
 }
 
 .post-actions {
@@ -11569,8 +11573,15 @@ a.article-link:hover {
 }
 
 @media (min-width: 768px) {
+  .statement {
+    padding: 65px;
+  }
   .statement .button {
     display: inline-block;
+  }
+
+  .statement-buttons .button:first-child {
+    margin-bottom: 0;
   }
 
   .two-three-section > .row {
@@ -11605,11 +11616,6 @@ a.article-link:hover {
   .collection-item:last-child {
     border-right: none;
     padding-right: 0;
-  }
-}
-@media (min-width: 992px) {
-  .statement {
-    padding: 65px 65px 45px;
   }
 }
 .home .site-header {
