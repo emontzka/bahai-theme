@@ -58,7 +58,7 @@ $current_cat = get_the_category($featured_ID );
 		<div class="container-fluid">
             <section>
                 <a href="" class="article-link">
-			<div class="rwo">
+			<div class="row">
                 <div class="col-lg-12">
                     
                 <h1><?php echo get_the_title($featured_ID); ?></h1>

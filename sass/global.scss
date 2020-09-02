@@ -16,7 +16,11 @@ section {
   margin-bottom: 50px;
 }
 .site-main {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin: 50px 0;
+}
+.no-top-margin {
+  margin-top: 0 !important;
 }
 
 a {
