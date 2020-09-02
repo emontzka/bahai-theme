@@ -36,6 +36,6 @@ $cats = get_terms([
 <?php if ($form_title) echo $form_title; 
 if ($form_description) echo $form_description; ?><br>
 
-<button type="button" class="button reverse d-inline-block" data-toggle="modal" data-target="#SubscribeForm">Subscribe</button>
+<button type="button" class="button secondary d-inline-block" data-toggle="modal" data-target="#SubscribeForm">Subscribe</button>
 </div>
 

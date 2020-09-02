@@ -34,17 +34,24 @@ a.article-link:hover {
 .two-three-article {
   position: relative;
   padding-bottom: 70px;
-  
   padding-top: 30px;
- 
+}
+
+.article-flex {
+  display: flex;
+  flex-direction: column;
+  .two-three-category {
+    margin-top: auto;
+  }
 }
 
 .two-three-category {
-  position: absolute;
-  width: calc(100% - 80px);
-  left: 40px;
-  bottom: 20px;
+  // position: absolute;
+  // width: calc(100% - 80px);
+  // left: 40px;
+  // bottom: 20px;
   border-bottom: 1px solid #01567a;
+padding-bottom: 20px;
 }
 .hover .two-three-category {
   border-bottom: 1px solid $red !important;

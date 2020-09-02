@@ -64,6 +64,17 @@ a:hover {
       color: $lightgray;
     }
   }
+  &.secondary {
+    background-color: $lightgray;
+    color: $teal;
+    &:visited {
+      color: $lightgray;
+    }
+    &:hover {
+      background-color: $teal;
+      color: $lightgray;
+    }
+  }
   &.reverse {
     background-color: $lightgray;
     color: $teal;

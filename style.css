@@ -10907,6 +10907,17 @@ a:hover {
   background-color: #7a0d1f;
   color: #fbfcfc;
 }
+.button.secondary {
+  background-color: #fbfcfc;
+  color: #2d7085;
+}
+.button.secondary:visited {
+  color: #fbfcfc;
+}
+.button.secondary:hover {
+  background-color: #2d7085;
+  color: #fbfcfc;
+}
 .button.reverse {
   background-color: #fbfcfc;
   color: #2d7085;
@@ -11434,12 +11445,17 @@ a.article-link:hover {
   padding-top: 30px;
 }
 
+.article-flex {
+  display: flex;
+  flex-direction: column;
+}
+.article-flex .two-three-category {
+  margin-top: auto;
+}
+
 .two-three-category {
-  position: absolute;
-  width: calc(100% - 80px);
-  left: 40px;
-  bottom: 20px;
   border-bottom: 1px solid #01567a;
+  padding-bottom: 20px;
 }
 
 .hover .two-three-category {
@@ -11600,6 +11616,9 @@ a.article-link:hover {
   position: absolute;
   opacity: 0.8;
 }
+.home .site-main {
+  margin-top: 0;
+}
 
 #mobile-nav {
   background-color: #2d7085;
@@ -11650,9 +11669,13 @@ a.article-link:hover {
   font-family: ff-scala-sans-pro, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  letter-spacing: 1.5px;
 }
 #primary-menu a {
   color: #fbfcfc;
+}
+#primary-menu a:hover {
+  text-decoration: underline;
 }
 #primary-menu .current-menu-item {
   text-decoration: underline;

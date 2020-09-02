@@ -1,7 +1,14 @@
-.home .site-header {
-  position: absolute;
+.home {
+ 
+  .site-header {
+    position: absolute;
   opacity: 0.8;
+  }
+  .site-main {
+    margin-top: 0;
+  }
 }
+
 #mobile-nav {
   background-color: $teal;
   opacity: 1;
@@ -59,9 +66,13 @@
     font-family: ff-scala-sans-pro, sans-serif;
     font-size: 1.125rem;
     line-height: 1.5rem;
+    letter-spacing: 1.5px;
   }
   a {
     color: $lightgray;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .current-menu-item {
     text-decoration: underline;

@@ -19,7 +19,7 @@ if (have_rows('article_rows')):
             ?>
 
 			<article class="two-three-article <?php echo $bootstrap; ?>">
-			<!-- <div class="article-flex"> -->
+			<div class="bottom-align">
 			<?php
    echo '<a class="article-link" href="' . $permalink . '" >';
    if (get_sub_field('show_article_image')) {
@@ -40,13 +40,13 @@ if (have_rows('article_rows')):
    
    echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {
-       echo '<p class="two-three-category">' . $category[0]->name . '</p>';
+       echo '<p class="two-three-category category">' . $category[0]->name . '</p>';
        // var_dump($category);
    }
    ?>
 
 
-        <!-- </div> -->
+        </div>
     </article>
 
         <?php
