@@ -57,6 +57,7 @@ $current_cat = get_the_category($featured_ID );
 	<main id="primary" class="site-main">
 		<div class="container-fluid">
             <section>
+                <a href="" class="article-link">
 			<div class="rwo">
                 <div class="col-lg-12">
                     
@@ -74,7 +75,7 @@ $current_cat = get_the_category($featured_ID );
                 </div>
                 </div>
                 <div class="col-lg-6"><?php echo get_the_post_thumbnail($featured_ID); ?></div>
-            </div>
+            </div></a>
 </section>
 
 

@@ -152,6 +152,12 @@ a.article-link:hover {
     }
   }
 }
+.collections-list {
+  padding-top: 15px;
+  h5 {
+    margin-bottom: 30px;
+  }
+}
 
 @media (min-width: 768px) {
   .statement {
@@ -178,6 +184,8 @@ a.article-link:hover {
   }
   .collections-list {
     border-bottom: 1px solid #d3dfed;
+    padding-top: 15px;
+    border-top: 1px solid #d3dfed;
     .row.pad-40 {
       border-bottom: 1px solid #d3dfed;
     }
@@ -199,7 +207,7 @@ a.article-link:hover {
 
 @media (min-width: 992px) {
   .statement {
-    padding: 50px 60px;
+    padding: 65px 65px 45px;
   }
   // .collections-list {
   //   .collection-item {
@@ -207,5 +215,10 @@ a.article-link:hover {
   //   }
   // }
 }
+
+
+
+
+
 
 
