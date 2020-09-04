@@ -69,7 +69,7 @@ get_header(); ?>
 // End of the loop.
 //
 ?>
-
+ <?php get_template_part('template-parts/content', 'single-subscribe'); ?>
 	</main><!-- #main -->
 
 <?php get_footer(); ?>

@@ -1,9 +1,5 @@
 
-<?php if (have_rows('collections_list')):
-
-    while (have_rows('collections_list')):
-        the_row();
-
+<?php 
         $col_list_title = get_sub_field('collections_title');
         echo '<section class="collections-list">';
         if ($col_list_title): ?>
@@ -36,8 +32,6 @@
                 echo '</a></div>';
             endwhile;
             echo '</div>'; //row
-        endif;
-    endwhile;
-endif; ?>
+        endif; ?>
 </section>
 

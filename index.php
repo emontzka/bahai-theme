@@ -114,6 +114,7 @@ $current_cat = get_the_category($featured_ID );
   </div>
  </div><!--col-lg-9 col-md-8-->
       </div><!--row-->
+     
 	</main><!-- #main -->
 
 <?php get_footer(); ?>

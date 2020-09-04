@@ -1,12 +1,18 @@
 <?php
-$lsa = get_field('large_statement_area');
-$statement = $lsa['text'];
-$button_one_text = $lsa['button_one_text'];
-$button_one_link = $lsa['button_one_link'];
-$button_two_text = $lsa['button_two_text'];
-$button_two_link = $lsa['button_two_link'];
 
-if ($lsa) {?>
+$statement = get_sub_field('text');
+$button_one_text = get_sub_field('button_one_text');
+$button_one_link = get_sub_field('button_one_link');
+$button_two_text = get_sub_field('button_two_text');
+$button_two_link = get_sub_field('button_two_link');
+// $lsa = get_sub_field('large_statement_area');
+// $statement = $lsa['text'];
+// $button_one_text = $lsa['button_one_text'];
+// $button_one_link = $lsa['button_one_link'];
+// $button_two_text = $lsa['button_two_text'];
+// $button_two_link = $lsa['button_two_link'];
+
+?>
 
     <section class="row">
         <div class=" col-sm-12">
@@ -25,5 +31,5 @@ if ($lsa) {?>
             </div>
         </div>
     </section>
-<?php }
+<?php 
 ?>
