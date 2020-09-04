@@ -43,10 +43,7 @@ get_header(); ?>
 
 <div class="container-fluid">
 
-<?php get_template_part('template-parts/content', 'article-rows'); ?>
-<?php get_template_part('template-parts/content', 'statement'); ?>
-<?php get_template_part('template-parts/content', 'collections-list'); ?>
-<?php get_template_part('template-parts/content', 'subscribe'); ?>
+<?php get_template_part('template-parts/content', 'components'); ?>
 
 
 

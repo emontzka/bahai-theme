@@ -80,7 +80,8 @@ if ($collection_query->have_posts()):
 endif;
 wp_reset_postdata();
 
-get_template_part('template-parts/content', 'collections-list'); 
+// get_template_part('template-parts/content', 'collections-list'); 
+get_template_part('template-parts/content', 'components'); 
 
 ?>
 

@@ -1,15 +1,16 @@
 <?php
-if (have_rows('article_rows')):
-    echo '<section class="two-three-section">';
-    while (have_rows('article_rows')):
-        the_row();
 
-        $row_count = count(get_sub_field('articles'));
+if (have_rows('row')):
+    echo '<section class="two-three-section">';
+    while (have_rows('row')):
+        the_row();
+        // echo 'template has row';
+        $row_count = count(get_sub_field('article'));
         $bootstrap = $row_count === 2 ? 'col-md-6' : 'col-md-4';
         echo '<div class="row pad-40">';
-        while (have_rows('articles')):
-
+        while (have_rows('article')):
             the_row();
+            // echo 'has articles ';
             $article = get_sub_field('article');
             $ID = $article->ID;
             $subtitle = get_field('subtitle', $ID);

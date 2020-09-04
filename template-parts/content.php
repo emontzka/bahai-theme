@@ -88,7 +88,8 @@ $pdf = get_field('post_pdf'); ?>
   endif; ?>
   <div class="row">
   <div class="offset-lg-3 offset-md-4 col-lg-9 col-md-8">
-  <?php get_template_part('template-parts/content', 'collections-list'); ?>
+  <?php //get_template_part('template-parts/content', 'collections-list'); ?>
+  <?php get_template_part('template-parts/content', 'components'); ?>
   </div>
 
 <?php

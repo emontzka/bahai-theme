@@ -11420,7 +11420,7 @@ a.article-link {
 a.article-link .article-thumb-container {
   position: relative;
   z-index: 1;
-  display: block;
+  display: inline-block;
   margin-bottom: 30px;
 }
 a.article-link:hover {
