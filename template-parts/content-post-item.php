@@ -2,6 +2,9 @@
 <div class="bottom-align">
     <a href="<?php the_permalink(  ); ?>" class="article-link">
 <div class="article-thumb-container">
+    <?php if (get_field('overlay_text')) {
+        echo '<p class="overlay">' . get_field('overlay_text') . '</p>';
+    } ?>
 <?php the_post_thumbnail( ); ?>
 </div>
 <h3><?php the_title(); ?></h3>

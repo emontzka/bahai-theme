@@ -15,11 +15,6 @@
 </header>
 <div class="container-fluid">
         <div class="row">
-            
-
-
-
-
 	<div class="entry-content pull">
     <div class="col-lg-10 offset-lg-1">
 		<?php the_content(); ?>
@@ -47,6 +42,8 @@
     <?php endif; ?>
     </div>
         </div>
-    </div>
+        <?php get_template_part( 'template-parts/content', 'components' ); ?>
+    </div><!-- container -->
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- #post-<?php //the_ID(); ?> -->
+

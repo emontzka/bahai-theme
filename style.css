@@ -10896,9 +10896,10 @@ a:hover {
 }
 .button:hover {
   text-decoration: none;
+  box-shadow: none;
 }
 .button.primary {
-  background-color: #2d7085;
+  background-color: #01567a;
 }
 .button.primary:visited {
   color: #fbfcfc;
@@ -10912,10 +10913,10 @@ a:hover {
   color: #2d7085;
 }
 .button.secondary:visited {
-  color: #fbfcfc;
+  color: #2d7085;
 }
 .button.secondary:hover {
-  background-color: #2d7085;
+  background-color: #01567a;
   color: #fbfcfc;
 }
 .button.reverse {
@@ -10946,6 +10947,19 @@ a:hover {
 
 .post-item {
   margin-bottom: 30px;
+}
+
+.overlay {
+  background: rgba(45, 112, 133, 0.75);
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #FBFCFC;
+  letter-spacing: 1px;
+  line-height: 24px;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
 }
 
 .bottom-align {
@@ -11231,6 +11245,31 @@ p.category {
   letter-spacing: 0.88px;
   color: #444;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.wp-pagenavi {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+  color: #2d7085;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.wp-pagenavi a {
+  display: inline-block;
+  padding-left: 15px;
+  color: #2d7085;
+}
+.wp-pagenavi .current {
+  padding-left: 15px;
+  display: inline-block;
+  font-weight: 700;
+  color: #444;
+}
+.wp-pagenavi .fas {
+  font-size: 0.8rem;
 }
 
 h1,
@@ -11305,6 +11344,13 @@ blockquote {
   line-height: 1.625rem;
   padding-left: 20px;
   border-left: 2px solid #01567a;
+}
+blockquote p {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-size: 1.125rem;
+  color: #444;
+  line-height: 1.625rem;
+  padding-left: 20px;
 }
 
 figcaption {
@@ -11427,6 +11473,9 @@ a.article-link:hover {
   text-decoration: none !important;
   color: #7a0d1f;
 }
+a.article-link:hover p {
+  color: #123350;
+}
 a.article-link:hover .article-thumb-container:before {
   content: "";
   position: absolute;
@@ -11496,8 +11545,17 @@ a.article-link:hover {
   margin-bottom: 30px;
 }
 
-.post-hero-row {
+.post-hero-row, .post-image-row {
   margin-top: 30px;
+  flex-direction: column-reverse;
+}
+.post-hero-row .bottom-rule, .post-image-row .bottom-rule {
+  display: none;
+}
+
+.caption-section {
+  position: relative;
+  margin-top: 10px;
 }
 
 .bottom-rule {
@@ -11572,7 +11630,39 @@ a.article-link:hover {
   margin-bottom: 30px;
 }
 
+.back-link {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
+  .pad-l-65 {
+    padding-left: 65px !important;
+  }
+
+  .pad-l-40 {
+    padding-left: 40px !important;
+    border-left: 1px solid #d3dfed;
+  }
+
+  .pad-r-40 {
+    padding-right: 40px !important;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #d3dfed;
+  }
+
+  .caption-section {
+    margin-top: 0;
+  }
+
+  .post-hero-row, .post-image-row {
+    flex-direction: row;
+  }
+  .post-hero-row .bottom-rule, .post-image-row .bottom-rule {
+    display: block;
+  }
+
   .statement {
     padding: 65px;
   }
@@ -11596,6 +11686,10 @@ a.article-link:hover {
   }
   .two-three-article:last-child {
     border-right: none;
+  }
+
+  .related .two-three-article {
+    padding-top: 0;
   }
 
   .collections-list {

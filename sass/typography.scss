@@ -19,6 +19,30 @@ p {
     letter-spacing: 0.88px;
     color: $darkgray;
     text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+.wp-pagenavi {
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+  color: $teal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  a {
+    display: inline-block;
+    padding-left: 15px;
+    color: $teal;
+  }
+  .current {
+    padding-left: 15px;
+    display: inline-block;
+    font-weight: 700;
+    color: $darkgray;
+  }
+  .fas {
+    font-size: .8rem;
   }
 }
 h1,
@@ -85,6 +109,13 @@ blockquote {
   line-height: 1.625rem;
   padding-left: 20px;
   border-left: 2px solid $blue;
+  p {
+    font-family: ff-scala-sans-pro, sans-serif;
+    font-size: 1.125rem;
+    color: $darkgray;
+    line-height: 1.625rem;
+    padding-left: 20px;
+  }
 }
 figcaption {
   font-family: ff-scala-sans-pro, sans-serif;

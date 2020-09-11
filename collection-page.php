@@ -55,29 +55,7 @@ foreach($collections as $collection) {
 
 <?php //wp_reset_postdata($featured_post);
 
-if ($collection_query->have_posts()):
-   $collection_count = 1;
-    while ($collection_query->have_posts()):
-        $collection_query->the_post();
-        if (get_the_id() !== $featured_ID): ?>
-        <div class="row special-collections">
-            <div class="col-lg-6">
-            <?php echo get_the_post_thumbnail(); ?>
-            </div>
-            <div class="col-lg-6">
-            <?php echo the_title('<h3>', '</h3>') ;
-            echo get_the_content(); ?>
-            <a class="button primary text-center" href="<?php echo get_the_permalink(); ?>">Explore the Collection</a>
-            </div>
-        </div>
 
-        <?php // echo 'id is ' . get_the_ID() . '<br >';
-        
-        endif;
-
-    endwhile;
-  
-endif;
 wp_reset_postdata();
 
 // get_template_part('template-parts/content', 'collections-list'); 

@@ -57,7 +57,7 @@ $current_cat = get_the_category($featured_ID );
 	<main id="primary" class="site-main">
 		<div class="container-fluid">
             <section>
-                <a href="" class="article-link">
+                <a href="<?php echo get_the_permalink( $featured_ID ); ?>" class="article-link">
 			<div class="row">
                 <div class="col-lg-12">
                     
@@ -82,20 +82,22 @@ $current_cat = get_the_category($featured_ID );
 
 
 		<?php if (have_posts()): ?>
-      <div class="row">
-          <div class="col-lg-3 col-md-4">
+      <div class="row border-bottom" style="border-bottom: 1px solid blue;">
+          <div class="col-lg-3 col-md-4 pad-r-40">
           <?php get_sidebar(  ); ?>
           </div>
-          <div class="col-lg-9 col-md-8">
+          <div class="col-lg-9 col-md-8 pad-l-40">
           <div class="row">
           
          
 
       <?php while (have_posts()):
           the_post();
+        //   var_dump($post->);
 
           
           get_template_part('template-parts/content', 'post-item');
+          
 
           /*
            * Include the Post-Type-specific template for the content.
@@ -104,16 +106,21 @@ $current_cat = get_the_category($featured_ID );
            */
           //get_template_part('template-parts/content', get_post_type());
       endwhile;
-
-      //   the_posts_navigation();
+      
+        //  the_posts_navigation();
+       
+       
   else:
 
 
       //   get_template_part('template-parts/content', 'none');
   endif; ?>
   </div>
+  <?php wp_pagenavi();  ?>
  </div><!--col-lg-9 col-md-8-->
+ 
       </div><!--row-->
+      
      
 	</main><!-- #main -->
 

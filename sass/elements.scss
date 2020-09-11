@@ -11,6 +11,9 @@ a.article-link {
   &:hover {
     text-decoration: none !important;
     color: $red;
+    p {
+      color: $darkblue;
+    }
 
     .article-thumb-container {
       &:before {
@@ -90,8 +93,16 @@ padding-bottom: 20px;
     margin-bottom: 30px;
   }
 }
-.post-hero-row {
+.post-hero-row, .post-image-row {
   margin-top: 30px;
+  flex-direction: column-reverse;
+  .bottom-rule {
+    display: none;
+  }
+}
+.caption-section {
+  position: relative;
+  margin-top: 10px;
 }
 .bottom-rule {
   width: calc(100% - 30px);
@@ -168,7 +179,35 @@ padding-bottom: 20px;
   }
 }
 
+.back-link {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
+  .pad-l-65 {
+    padding-left: 65px !important;
+  }
+  .pad-l-40 {
+    padding-left: 40px !important;
+    border-left: 1px solid $lightblue;
+    // border-bottom: 1px solid $lightblue;
+  }
+  .pad-r-40 {
+    padding-right: 40px !important;
+  }
+  .border-bottom {
+    border-bottom: 1px solid $lightblue;
+  }
+  .caption-section {
+    margin-top: 0;
+  }
+  .post-hero-row, .post-image-row  {
+    // margin-top: 0;
+    flex-direction: row;
+    .bottom-rule {
+      display: block;
+    }
+  }
   .statement {
     padding: 65px;
     .button {
@@ -195,6 +234,11 @@ padding-bottom: 20px;
     border-right: 1px solid #d3dfed;
     &:last-child {
       border-right: none;
+    }
+  }
+  .related {
+    .two-three-article {
+      padding-top: 0;
     }
   }
   .collections-list {

@@ -17,6 +17,10 @@ if (have_rows('row')):
             $author = get_user_by('id', $article->post_author);
             $category = get_the_category($ID);
             $permalink = get_post_permalink($ID);
+            // $catslug = $category[0];
+            $catlink = get_term_link($category[0]);
+           
+            
             ?>
 
 			<article class="two-three-article <?php echo $bootstrap; ?>">
@@ -42,8 +46,8 @@ if (have_rows('row')):
    
    echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {
-       echo '<p class="two-three-category category">' . $category[0]->name . '</p>';
-       // var_dump($category);
+    //    echo $catlink;
+       echo '<p class="two-three-category category"><a href="'.$catlink.'">' . $category[0]->name . '</a></p>';
    }
    ?>
 

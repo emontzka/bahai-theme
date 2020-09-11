@@ -35,8 +35,8 @@ $pdf = get_field('post_pdf'); ?>
           
           echo '<p class="author">By ' . $auth_name . '</p>'; 
           echo '<figcaption>' . $auth_desc . '</figcaption>'; 
-          $share_buttons = '<div class="share-button-container"><p class="author post-actions"><span class="share-button">Share<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></span>'; 
-          $share_buttons .= '<span class="print-button">Print<i class="fas fa-print"></i></span>';
+          $share_buttons = '<div class="share-button-container"><p class="author post-actions"><span class="share-button">Share<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></span>&nbsp;&nbsp;'; 
+          $share_buttons .= '<span class="print-button">Print<i class="fas fa-print"></i></span>&nbsp;&nbsp;';
           if ($pdf) {
             $share_buttons .= '<a href="' . $pdf['url'] . '" target="_blank">Save<i class="fas fa-download"></i></a>';
           }
@@ -52,7 +52,7 @@ $pdf = get_field('post_pdf'); ?>
           $text_class = 'first-text'; 
         } elseif ($row_count === $gfo_count) {
           $text_class = 'last-text'; }?>
-			  <div class="col-lg-9 col-md-8 text-section <?php echo $text_class; ?>">
+			  <div class="col-lg-9 col-md-8 text-section pad-l-65 <?php echo $text_class; ?>">
 				<?php echo $text; ?>
 				<?php the_field('text'); ?>
 			  </div>
@@ -64,12 +64,12 @@ $pdf = get_field('post_pdf'); ?>
           elseif (get_row_layout() == 'full_width_image'):
               $img = get_sub_field('image'); ?>
 			  <div class="row post-image-row">
-			  <div class="col-lg-3 col-md-4 position-relative">
+			  <div class="col-lg-3 col-md-4 caption-section">
         <hr class="top-rule">
           <figcaption><?php echo $img['caption']; ?></figcaption>
           <hr class="bottom-rule">
 			  </div>
-			  <div class="col-lg-9 col-md-8">
+			  <div class="col-lg-9 col-md-8 pad-l-65">
 				  <?php
               //var_dump($img);
               ?>
@@ -87,7 +87,7 @@ $pdf = get_field('post_pdf'); ?>
       // Do something...
   endif; ?>
   <div class="row">
-  <div class="offset-lg-3 offset-md-4 col-lg-9 col-md-8">
+  <div class="offset-lg-3 offset-md-4 col-lg-9 col-md-8 pad-l-65">
   <?php //get_template_part('template-parts/content', 'collections-list'); ?>
   <?php get_template_part('template-parts/content', 'components'); ?>
   </div>

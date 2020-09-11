@@ -24,4 +24,11 @@ jQuery(function ($) {
         btnCcontainer.toggleClass('show-buttons');
     })
 
+
+    $('.back-link').on('click', function (e) {
+        // e.preventDefault();
+        console.log('back clicked');
+        window.history.back();
+    })
+
 });

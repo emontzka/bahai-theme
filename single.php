@@ -23,9 +23,9 @@ get_header(); ?>
 			<section class="post-hero">
 			<div class="row">
 				<div class="col-lg-3 col-md-4" >
-				<!-- <p>(back link)</p> -->
+				<p class="back-link author"><i class="fas fa-chevron-left"></i>&nbsp;BACK</p>
 				</div>
-				<div class="col-lg-9 col-md-8">
+				<div class="col-lg-9 col-md-8 pad-l-65">
 					<p class="category"><a href="<?php echo $cat_link; ?>"><?php echo $current_cat->name; ?></a></p>
 					<?php
      the_title('<h1 class="entry-title">', '</h1>');
@@ -37,12 +37,12 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row  post-hero-row">
-				<div class="col-lg-3 col-md-4 position-relative">
+				<div class="col-lg-3 col-md-4 caption-section">
                 <hr class="top-rule">
                     <figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
                     <hr class="bottom-rule">
 				</div>
-				<div class="col-lg-9 col-md-8">
+				<div class="col-lg-9 col-md-8 pad-l-65">
 				<?php bahai_post_thumbnail(); ?>
 				</div>
 			</div>

@@ -57,6 +57,7 @@ if( have_rows('collections') ):
         $col_cat = get_the_category( $col_ID );
         $col_subtitle = get_field('subtitle', $col_ID);
         $col_link = get_the_permalink( $col_ID );
+        $catlink = get_term_link($col_cat[0]);
         // $featured_author = get_the_author_meta('display_name', $featured_query->post_author);
         $col_author = get_the_author_meta( 'display_name', $collection->post_author );
         
@@ -72,7 +73,7 @@ if( have_rows('collections') ):
         <h4><?php echo $col_subtitle; ?></h4>
 </a>
         <p class="author">By <?php echo $col_author; ?></p>
-        <p class="category"><?php echo $col_cat[0]->name; ?> </p>
+        <p class="category"><a href="<?php echo $catlink; ?>"><?php echo $col_cat[0]->name; ?> </a></p>
         </div>
 </div>
 
