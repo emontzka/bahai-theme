@@ -73,7 +73,7 @@ if( have_rows('collections') ):
         <h4><?php echo $col_subtitle; ?></h4>
 </a>
         <p class="author">By <?php echo $col_author; ?></p>
-        <p class="category"><a href="<?php echo $catlink; ?>"><?php echo $col_cat[0]->name; ?> </a></p>
+        <p class="category-text"><a href="<?php echo $catlink; ?>"><?php echo $col_cat[0]->name; ?> </a></p>
         </div>
 </div>
 

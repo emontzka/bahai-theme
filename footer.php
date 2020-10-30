@@ -15,7 +15,12 @@
 			<div class="row">
 				<div class="col-12">
 				<div class="site-info">
-			<p><a href="">Contact</a> | <a href="">Legal</a> | <a href="">Privacy</a></p>
+        <?php wp_nav_menu([
+        'theme_location' => 'menu-2',
+        'menu_id' => 'footer-menu',
+        'after' => '<span> | </span>'
+
+    ]); ?>
 			<p class="footer-logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo bloginfo(
     'template_directory'
 ); ?>/images/bahai-footer.svg" /><span>The Bahá’í Faith</span></a></p>
@@ -27,12 +32,13 @@
 		
 
 
-<!-- Modal -->
+<!-- Modals -->
+<?php $subscribe_modal = get_field('subscribe_modal_title','option'); ?>
 <div class="modal fade" id="SubscribeForm" tabindex="-1" role="dialog" aria-labelledby="SubscribeFormTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Subcribe</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle"><?php echo $subscribe_modal ? $subscribe_modal : 'Subscribe'; ?></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -45,12 +51,12 @@
     </div>
   </div>
 </div>
-
+<?php $search_modal = get_field('search_modal_title','option'); ?>
 <div class="modal fade" id="SearchForm" tabindex="-1" role="dialog" aria-labelledby="SearchFormTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Search</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle"><?php echo $search_modal ? $search_modal : 'Search'; ?></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

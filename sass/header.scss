@@ -46,14 +46,14 @@
   height: 50px;
   width: 60px;
 }
-// .custom-logo-link {
-//   height: 40px;
-//   width: 60px;
-// }
-// img.custom-logo {
-//   height: 100%;
-//   width: 120%;
-// }
+.iframe {
+  background-color: #fff;
+  width: 100%;
+  height: calc(100vh - 200px);
+  // min-height: 500px;
+  opacity: 1;
+  display: none;
+}
 
 #primary-menu {
   flex-direction: column;
@@ -181,6 +181,11 @@
   .secondary-nav-mobile {
     font-size: 0.875rem;
     color: $lightgray;
+  }
+}
+@media (max-width: 991px) {
+  .iframe {
+    display: none !important;
   }
 }
 @media (min-width: 992px) {

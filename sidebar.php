@@ -17,7 +17,7 @@ $cats = get_terms([
      $cat_output .= '<div class="category-widget"><h5>Topics</h5><ul>';
      foreach ($cats as $cat) {
          $cat_output .=
-             '<li><p class="category"><a href="' .
+             '<li><p class="category-text"><a href="' .
              esc_url(get_term_link($cat)) .
              '">' .
              $cat->name .

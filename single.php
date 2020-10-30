@@ -26,7 +26,7 @@ get_header(); ?>
 				<p class="back-link author"><i class="fas fa-chevron-left"></i>&nbsp;BACK</p>
 				</div>
 				<div class="col-lg-9 col-md-8 pad-l-65">
-					<p class="category"><a href="<?php echo $cat_link; ?>"><?php echo $current_cat->name; ?></a></p>
+					<p class="category-text"><a href="<?php echo $cat_link; ?>"><?php echo $current_cat->name; ?></a></p>
 					<?php
      the_title('<h1 class="entry-title">', '</h1>');
      echo '<h4>' . $subtitle . '</h4>';

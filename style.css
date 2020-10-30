@@ -11237,8 +11237,8 @@ p.author {
   color: #2d7085;
   text-transform: uppercase;
 }
-body.category,
-p.category {
+body.category-text,
+p.category-text {
   font-family: ff-scala-sans-pro, sans-serif;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -11389,8 +11389,8 @@ p.author {
     line-height: 1.25rem;
     letter-spacing: 1px;
   }
-  body.category,
-p.category {
+  body.category-text,
+p.category-text {
     font-size: 1rem;
     line-height: 1.25rem;
     letter-spacing: 1px;
@@ -11541,7 +11541,7 @@ a.article-link:hover {
   margin-top: 30px;
 }
 
-.post-hero .category {
+.post-hero .category-text {
   margin-bottom: 30px;
 }
 
@@ -11632,6 +11632,14 @@ a.article-link:hover {
 
 .back-link {
   cursor: pointer;
+}
+
+.end-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/bahai-world-end-character.png");
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -11756,6 +11764,14 @@ a.article-link:hover {
   background-size: cover;
   height: 50px;
   width: 60px;
+}
+
+.iframe {
+  background-color: #fff;
+  width: 100%;
+  height: calc(100vh - 200px);
+  opacity: 1;
+  display: none;
 }
 
 #primary-menu {
@@ -11885,6 +11901,11 @@ a.article-link:hover {
     color: #fbfcfc;
   }
 }
+@media (max-width: 991px) {
+  .iframe {
+    display: none !important;
+  }
+}
 @media (min-width: 992px) {
   .site-header {
     height: 140px;
@@ -11914,6 +11935,27 @@ a.article-link:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.site-info ul {
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.site-info ul a:hover {
+  text-decoration: underline;
+}
+.site-info li {
+  font-family: ff-scala-sans-pro, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.86px;
+  line-height: 1.5rem;
+  display: inline;
+  list-style: none;
+}
+.site-info li:last-child span {
+  display: none;
 }
 .site-info p {
   text-align: center;
@@ -12054,6 +12096,15 @@ form.wpcf7-form input[type=submit] {
 form.wpcf7-form div.wpcf7 .ajax-loader {
   display: none !important;
   position: absolute;
+}
+
+input#search {
+  width: 100%;
+}
+
+.search-form input[type=submit] {
+  color: #fbfcfc;
+  margin-top: 15px;
 }
 
 @media (min-width: 850px) {

@@ -31,7 +31,7 @@
  ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="container-fluid">
+		<div class="container-fluid position-relative">
 			<div class="row">
 				<div class="col-lg-10 d-flex">
 					<!-- <div class="row "> -->
@@ -67,7 +67,7 @@
 				<div class="d-none d-lg-block">
 				<ul class="secondary-nav">
 					<li data-toggle="modal" data-target="#SubscribeForm">Subscribe</li>
-					<li><a href="">All Sites</a></li>
+					<li  class="all-sites">All Sites</li>
 					<li data-toggle="modal" data-target="#SearchForm">Search<i class="fas fa-search"></i></li>
 					<!-- <i class="fas fa-lg fa-times"></i> -->
 				</ul>
@@ -76,7 +76,15 @@
 
 			</div>
 			</div>
-			<!-- </div> -->
+			<div class="row">
+				<div class="col-sm-12">
+				<?php $iframe = get_field('iframe_url','option');
+				if ($iframe) {
+					echo '<div class="iframe desktop"><iframe width="100%" height="100%" src="'.$iframe['url'].'" title="'.$iframe['text'].'"></iframe>';
+				} ?>
+				
+				</div>
+			</div>
 		</div><!--container-fluid -->
 		<div id="mobileNav"> <!--collapse navbar-collapse--->
 			<div class="container-fluid">
@@ -89,13 +97,14 @@
 			<hr>
 			<ul class="secondary-nav-mobile">
 				<li  data-toggle="modal" data-target="#SubscribeForm" >Subscribe</li>
-				<li>All Sites</li>
+				<li class="all-sites">All Sites</li>
 			</ul>
 			<hr>
 			<?php get_search_form( ); ?>
 			</div>
 				</div>
 			</div>
+		
 		</div>
 
 	</header><!-- #masthead -->

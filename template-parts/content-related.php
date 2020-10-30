@@ -42,7 +42,7 @@ if (have_rows('posts')):
    
    echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {
-       echo '<p class="two-three-category category">' . $category[0]->name . '</p>';
+       echo '<p class="two-three-category category-text">' . $category[0]->name . '</p>';
    }
    ?>
         </div>

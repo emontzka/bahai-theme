@@ -30,5 +30,13 @@ jQuery(function ($) {
         console.log('back clicked');
         window.history.back();
     })
+    $('.all-sites').on('click', function () {
+        $('.iframe').toggle();
+    })
+
+    const endPost = $('.last-text p:last-child');
+    console.log('end post ', endPost);
+    // $('<span class="end-logo"></span>').append(endPost);
+    endPost.append('<span class="end-logo"></span>');
 
 });

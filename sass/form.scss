@@ -29,6 +29,15 @@ form.wpcf7-form  {
         position: absolute;
     }
 }
+input#search {
+    width: 100%;
+}
+.search-form {
+    input[type="submit"] {
+        color: $lightgray;
+        margin-top: 15px;
+    }
+}
 @media (min-width: 850px) {
     form.wpcf7-form  {
         display: flex;

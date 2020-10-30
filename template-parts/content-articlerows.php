@@ -47,7 +47,7 @@ if (have_rows('row')):
    echo '<p class="author">By ' . $author->display_name . '</p>';
    if ($category) {
     //    echo $catlink;
-       echo '<p class="two-three-category category"><a href="'.$catlink.'">' . $category[0]->name . '</a></p>';
+       echo '<p class="two-three-category category-text"><a href="'.$catlink.'">' . $category[0]->name . '</a></p>';
    }
    ?>
 

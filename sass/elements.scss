@@ -89,7 +89,7 @@ padding-bottom: 20px;
 }
 
 .post-hero {
-  .category {
+  .category-text {
     margin-bottom: 30px;
   }
 }
@@ -181,6 +181,14 @@ padding-bottom: 20px;
 
 .back-link {
   cursor: pointer;
+}
+
+.end-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('images/bahai-world-end-character.png');
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
