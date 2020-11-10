@@ -11294,10 +11294,11 @@ h3,
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.375rem;
+  color: #123350;
 }
 h3.blue,
 .h3.blue {
-  color: #01567a;
+  color: #123350;
 }
 
 h4,
@@ -11996,7 +11997,7 @@ a.article-link:hover {
   margin-bottom: 50px;
 }
 .category-widget h5 {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .category-widget ul {
   margin-left: 0;
@@ -12078,6 +12079,7 @@ form.wpcf7-form p input[type=text], form.wpcf7-form p input[type=email] {
   padding: 8px;
   border: 1px solid #123350;
   height: 40px;
+  padding-top: 15px;
 }
 form.wpcf7-form p span, form.wpcf7-form p label {
   width: 100%;
@@ -18027,11 +18029,7 @@ readers do not read off random characters that represent icons */
   position: static;
 }
 
-@media all and (min-width: 992px) {
-  .hero-area {
-    margin-bottom: 50px;
-  }
-
+@media all and (min-width: 768px) {
   .hero-text-container {
     position: absolute;
     left: 0;
@@ -18040,6 +18038,14 @@ readers do not read off random characters that represent icons */
 
   .hero-text-area {
     padding: 40px 30px;
+  }
+
+  .hero-image-container {
+    height: 470px;
+  }
+
+  .hero-area {
+    margin-bottom: 50px;
   }
 }
 

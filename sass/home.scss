@@ -18,10 +18,7 @@
   width: 100%;
   position: static;
 }
-@media all and (min-width: 992px) {
-  .hero-area {
-    margin-bottom: 50px;
-  }
+@media all and (min-width: 768px) {
   .hero-text-container {
     position: absolute;
     left: 0;
@@ -30,4 +27,15 @@
   .hero-text-area {
     padding: 40px 30px;
   }
+  .hero-image-container {
+    height: 470px;
+  }
+  .hero-area {
+    margin-bottom: 50px;
+  }
+}
+@media all and (min-width: 992px) {
+
+
+
 }

@@ -29,7 +29,7 @@ get_header(); ?>
 <div class=" hero-text-container">
     <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-7 hero-text-area">
+        <div class="col-md-7 hero-text-area">
             <a href="<?php echo $feat_link; ?>"><h2 class="h1"><?php echo $title; ?></h2>
             <p><?php echo $f_excerpt; ?></p></a>
             <p class="author">By <?php echo the_author_meta('display_name', $authorID); ?></p>

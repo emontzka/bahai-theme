@@ -25,7 +25,10 @@ $cats = get_terms([
 	 }
 	
      $cat_output .= '</ul></div>';
-      echo $cat_output;
+     if (is_home()) {
+        echo $cat_output;
+     }
+      
  }
 
  $form_title = get_field('sidebar_form_title', 'option');
