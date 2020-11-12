@@ -11069,150 +11069,6 @@ a:hover {
     padding-right: 40px;
     padding-left: 40px;
   }
-  .row.pad-40 .col-xl:first-child,
-.row.pad-40 .col-xl-auto:first-child,
-.row.pad-40 .col-xl-12:first-child,
-.row.pad-40 .col-xl-11:first-child,
-.row.pad-40 .col-xl-10:first-child,
-.row.pad-40 .col-xl-9:first-child,
-.row.pad-40 .col-xl-8:first-child,
-.row.pad-40 .col-xl-7:first-child,
-.row.pad-40 .col-xl-6:first-child,
-.row.pad-40 .col-xl-5:first-child,
-.row.pad-40 .col-xl-4:first-child,
-.row.pad-40 .col-xl-3:first-child,
-.row.pad-40 .col-xl-2:first-child,
-.row.pad-40 .col-xl-1:first-child,
-.row.pad-40 .col-lg:first-child,
-.row.pad-40 .col-lg-auto:first-child,
-.row.pad-40 .col-lg-12:first-child,
-.row.pad-40 .col-lg-11:first-child,
-.row.pad-40 .col-lg-10:first-child,
-.row.pad-40 .col-lg-9:first-child,
-.row.pad-40 .col-lg-8:first-child,
-.row.pad-40 .col-lg-7:first-child,
-.row.pad-40 .col-lg-6:first-child,
-.row.pad-40 .col-lg-5:first-child,
-.row.pad-40 .col-lg-4:first-child,
-.row.pad-40 .col-lg-3:first-child,
-.row.pad-40 .col-lg-2:first-child,
-.row.pad-40 .col-lg-1:first-child,
-.row.pad-40 .col-md:first-child,
-.row.pad-40 .col-md-auto:first-child,
-.row.pad-40 .col-md-12:first-child,
-.row.pad-40 .col-md-11:first-child,
-.row.pad-40 .col-md-10:first-child,
-.row.pad-40 .col-md-9:first-child,
-.row.pad-40 .col-md-8:first-child,
-.row.pad-40 .col-md-7:first-child,
-.row.pad-40 .col-md-6:first-child,
-.row.pad-40 .col-md-5:first-child,
-.row.pad-40 .col-md-4:first-child,
-.row.pad-40 .col-md-3:first-child,
-.row.pad-40 .col-md-2:first-child,
-.row.pad-40 .col-md-1:first-child,
-.row.pad-40 .col-sm:first-child,
-.row.pad-40 .col-sm-auto:first-child,
-.row.pad-40 .col-sm-12:first-child,
-.row.pad-40 .col-sm-11:first-child,
-.row.pad-40 .col-sm-10:first-child,
-.row.pad-40 .col-sm-9:first-child,
-.row.pad-40 .col-sm-8:first-child,
-.row.pad-40 .col-sm-7:first-child,
-.row.pad-40 .col-sm-6:first-child,
-.row.pad-40 .col-sm-5:first-child,
-.row.pad-40 .col-sm-4:first-child,
-.row.pad-40 .col-sm-3:first-child,
-.row.pad-40 .col-sm-2:first-child,
-.row.pad-40 .col-sm-1:first-child,
-.row.pad-40 .col:first-child,
-.row.pad-40 .col-auto:first-child,
-.row.pad-40 .col-12:first-child,
-.row.pad-40 .col-11:first-child,
-.row.pad-40 .col-10:first-child,
-.row.pad-40 .col-9:first-child,
-.row.pad-40 .col-8:first-child,
-.row.pad-40 .col-7:first-child,
-.row.pad-40 .col-6:first-child,
-.row.pad-40 .col-5:first-child,
-.row.pad-40 .col-4:first-child,
-.row.pad-40 .col-3:first-child,
-.row.pad-40 .col-2:first-child,
-.row.pad-40 .col-1:first-child {
-    padding-left: 0;
-  }
-  .row.pad-40 .col-xl:last-child,
-.row.pad-40 .col-xl-auto:last-child,
-.row.pad-40 .col-xl-12:last-child,
-.row.pad-40 .col-xl-11:last-child,
-.row.pad-40 .col-xl-10:last-child,
-.row.pad-40 .col-xl-9:last-child,
-.row.pad-40 .col-xl-8:last-child,
-.row.pad-40 .col-xl-7:last-child,
-.row.pad-40 .col-xl-6:last-child,
-.row.pad-40 .col-xl-5:last-child,
-.row.pad-40 .col-xl-4:last-child,
-.row.pad-40 .col-xl-3:last-child,
-.row.pad-40 .col-xl-2:last-child,
-.row.pad-40 .col-xl-1:last-child,
-.row.pad-40 .col-lg:last-child,
-.row.pad-40 .col-lg-auto:last-child,
-.row.pad-40 .col-lg-12:last-child,
-.row.pad-40 .col-lg-11:last-child,
-.row.pad-40 .col-lg-10:last-child,
-.row.pad-40 .col-lg-9:last-child,
-.row.pad-40 .col-lg-8:last-child,
-.row.pad-40 .col-lg-7:last-child,
-.row.pad-40 .col-lg-6:last-child,
-.row.pad-40 .col-lg-5:last-child,
-.row.pad-40 .col-lg-4:last-child,
-.row.pad-40 .col-lg-3:last-child,
-.row.pad-40 .col-lg-2:last-child,
-.row.pad-40 .col-lg-1:last-child,
-.row.pad-40 .col-md:last-child,
-.row.pad-40 .col-md-auto:last-child,
-.row.pad-40 .col-md-12:last-child,
-.row.pad-40 .col-md-11:last-child,
-.row.pad-40 .col-md-10:last-child,
-.row.pad-40 .col-md-9:last-child,
-.row.pad-40 .col-md-8:last-child,
-.row.pad-40 .col-md-7:last-child,
-.row.pad-40 .col-md-6:last-child,
-.row.pad-40 .col-md-5:last-child,
-.row.pad-40 .col-md-4:last-child,
-.row.pad-40 .col-md-3:last-child,
-.row.pad-40 .col-md-2:last-child,
-.row.pad-40 .col-md-1:last-child,
-.row.pad-40 .col-sm:last-child,
-.row.pad-40 .col-sm-auto:last-child,
-.row.pad-40 .col-sm-12:last-child,
-.row.pad-40 .col-sm-11:last-child,
-.row.pad-40 .col-sm-10:last-child,
-.row.pad-40 .col-sm-9:last-child,
-.row.pad-40 .col-sm-8:last-child,
-.row.pad-40 .col-sm-7:last-child,
-.row.pad-40 .col-sm-6:last-child,
-.row.pad-40 .col-sm-5:last-child,
-.row.pad-40 .col-sm-4:last-child,
-.row.pad-40 .col-sm-3:last-child,
-.row.pad-40 .col-sm-2:last-child,
-.row.pad-40 .col-sm-1:last-child,
-.row.pad-40 .col:last-child,
-.row.pad-40 .col-auto:last-child,
-.row.pad-40 .col-12:last-child,
-.row.pad-40 .col-11:last-child,
-.row.pad-40 .col-10:last-child,
-.row.pad-40 .col-9:last-child,
-.row.pad-40 .col-8:last-child,
-.row.pad-40 .col-7:last-child,
-.row.pad-40 .col-6:last-child,
-.row.pad-40 .col-5:last-child,
-.row.pad-40 .col-4:last-child,
-.row.pad-40 .col-3:last-child,
-.row.pad-40 .col-2:last-child,
-.row.pad-40 .col-1:last-child {
-    padding-right: 0;
-  }
 }
 @media (min-width: 992px) {
   .button {
@@ -11340,17 +11196,17 @@ label {
 
 blockquote {
   font-family: ff-scala-sans-pro, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #444;
-  line-height: 1.625rem;
+  line-height: 1.75rem;
   padding-left: 20px;
   border-left: 2px solid #01567a;
 }
 blockquote p {
   font-family: ff-scala-sans-pro, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #444;
-  line-height: 1.625rem;
+  line-height: 1.75rem;
   padding-left: 20px;
 }
 
@@ -11369,13 +11225,15 @@ input[type=text] {
   line-height: 1.125rem;
 }
 
-.first-text p:first-child:first-letter {
+.first-text > p:first-child:first-letter {
   float: left;
-  font-size: 75px;
+  font-size: 65px;
   line-height: 60px;
-  padding-top: 4px;
+  padding-top: 7px;
   padding-right: 8px;
   padding-left: 3px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -11465,10 +11323,14 @@ a.article-link {
   text-decoration: none !important;
 }
 a.article-link .article-thumb-container {
+  width: 100%;
+  padding-top: 75%;
   position: relative;
   z-index: 1;
   display: inline-block;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a.article-link:hover {
   text-decoration: none !important;
@@ -11536,6 +11398,13 @@ a.article-link:hover {
 .subscribe-desktop {
   background-color: #d3dfed;
   padding: 65px;
+}
+
+.blog-featured {
+  margin-bottom: 100px;
+}
+.blog-featured .wp-post-image {
+  margin-bottom: 50px;
 }
 
 .post-actions {
@@ -11719,6 +11588,11 @@ a.article-link:hover {
   .collection-item:last-child {
     border-right: none;
     padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .blog-featured .wp-post-image {
+    margin-bottom: 0;
   }
 }
 .home .site-header {
@@ -12020,6 +11894,19 @@ a.article-link:hover {
   color: #2d7085;
 }
 
+.bottom-subscribe .form-widget {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#category-select {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#category-select select {
+  width: 100%;
+}
+
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
@@ -12130,6 +12017,10 @@ input#search {
     position: relative;
   }
 }
+.wpcf7 form.sent .wpcf7-response-output {
+  border: none !important;
+}
+
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -18041,7 +17932,7 @@ readers do not read off random characters that represent icons */
   }
 
   .hero-image-container {
-    height: 470px;
+    height: 650px;
   }
 
   .hero-area {

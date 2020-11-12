@@ -17,19 +17,21 @@ get_header(); ?>
  $current_cat = $current_cat[0]; // name, description, cat_ID,
  $cat_link = get_category_link($current_cat->cat_ID);
  $subtitle = get_field('subtitle');
+ $post_date = get_the_date( 'l F j, Y' );
  ?>
 	<main id="primary" class="site-main">
 		<div class="container-fluid">
 			<section class="post-hero">
 			<div class="row">
 				<div class="col-lg-3 col-md-4" >
-				<p class="back-link author"><i class="fas fa-chevron-left"></i>&nbsp;BACK</p>
+				<p class="back-link author"><a href="<?php echo get_permalink(15 ) ?>"><i class="fas fa-chevron-left"></i>&nbsp;BACK</a></p>
 				</div>
 				<div class="col-lg-9 col-md-8 pad-l-65">
 					<p class="category-text"><a href="<?php echo $cat_link; ?>"><?php echo $current_cat->name; ?></a></p>
 					<?php
      the_title('<h1 class="entry-title">', '</h1>');
-     echo '<h4>' . $subtitle . '</h4>';
+	 echo '<h4>' . $subtitle . '</h4>';
+	 echo '<p class="category-text">' . $post_date . '</p>';
      ?>
 
 				
@@ -38,8 +40,10 @@ get_header(); ?>
 			</div>
 			<div class="row  post-hero-row">
 				<div class="col-lg-3 col-md-4 caption-section">
+					<?php if (the_post_thumbnail_caption()): ?>
                 <hr class="top-rule">
-                    <figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+					<?php endif; ?>
                     <hr class="bottom-rule">
 				</div>
 				<div class="col-lg-9 col-md-8 pad-l-65">

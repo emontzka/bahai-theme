@@ -14,7 +14,7 @@ $cats = get_terms([
  ]);
  $cat_output = '';
  if ($cats) {
-     $cat_output .= '<div class="category-widget"><h5>Topics</h5><ul>';
+     $cat_output .= '<div class="category-widget d-none d-md-block"><h5>Topics</h5><ul>';
      foreach ($cats as $cat) {
          $cat_output .=
              '<li><p class="category-text"><a href="' .
@@ -27,18 +27,39 @@ $cats = get_terms([
      $cat_output .= '</ul></div>';
      if (is_home()) {
         echo $cat_output;
-     }
-      
+     }    
  }
-
- $form_title = get_field('sidebar_form_title', 'option');
- $form_description = get_field('form_description', 'option');
 ?>
 
-<div class="form-widget">
-<?php if ($form_title) echo $form_title; 
-if ($form_description) echo $form_description; ?><br>
+<!-- mobile dropdown -->
+<div class="d-md-none">
+<h5>Topics</h5>
+        <form id="category-select" class="select-drop" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 
-<button type="button" class="button secondary d-inline-block" data-toggle="modal" data-target="#SubscribeForm">Subscribe</button>
+            <?php
+            $args = array(
+                'show_option_none' => __( 'All', 'textdomain' ),
+                'show_count'       => 0,
+                'orderby'          => 'name',
+                'echo'             => 0,
+            );
+            ?>
+
+            <?php $select  = wp_dropdown_categories( $args ); ?>
+            <?php $replace = "<select$1 onchange='return this.form.submit()'>"; ?>
+            <?php $select  = preg_replace( '#<select([^>]*)>#', $replace, $select ); ?>
+
+            <?php echo $select; ?>
+
+        
+
+          
+
+        </form>
+    </div>
+
+<div class="d-md-block d-none">
+    <?php get_template_part( 'template-parts/content', 'subscribe-form' ); ?>
 </div>
+
 

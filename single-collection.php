@@ -66,8 +66,8 @@ if( have_rows('collections') ):
         <div class="col-lg-4 col-md-6 post-item">
         <div class="bottom-align">
         <a href="<?php echo $col_link; ?>" class="article-link">
-            <div class="article-thumb-container">
-        <?php echo get_the_post_thumbnail( $col_ID ); ?>
+            <div class="article-thumb-container" style="background-image: url(<?php echo get_the_post_thumbnail_url( $col_ID ); ?>);">
+        <?php //echo get_the_post_thumbnail( $col_ID ); ?>
         </div>
         <h3><?php echo $col_title; ?></h3>
         <h4><?php echo $col_subtitle; ?></h4>

@@ -1,11 +1,11 @@
 <div class="col-lg-4 col-md-6 post-item">
 <div class="bottom-align">
     <a href="<?php the_permalink(  ); ?>" class="article-link">
-<div class="article-thumb-container">
+<div class="article-thumb-container" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
     <?php if (get_field('overlay_text')) {
         echo '<p class="overlay">' . get_field('overlay_text') . '</p>';
     } ?>
-<?php the_post_thumbnail( ); ?>
+<?php //the_post_thumbnail( ); ?>
 </div>
 <h3><?php the_title(); ?></h3>
 <?php if(get_field('subtitle')) {

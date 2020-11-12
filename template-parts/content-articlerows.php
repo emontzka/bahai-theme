@@ -28,8 +28,8 @@ if (have_rows('row')):
 			<?php
    echo '<a class="article-link" href="' . $permalink . '" >';
    if (get_sub_field('show_article_image')) {
-       echo '<div class="article-thumb-container">' .
-           get_the_post_thumbnail($ID) .
+       echo '<div class="article-thumb-container" style="background-image: url('.get_the_post_thumbnail_url().')">' .
+           //get_the_post_thumbnail($ID) .
            '</div>';
    }
    echo '<h3>' . esc_html($article->post_title) . '</h3>';
