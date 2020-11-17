@@ -192,3 +192,14 @@ add_filter('upload_mimes', 'cc_mime_types');
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page();
 }
+
+function wp1482371_custom_post_type_args( $args, $post_type ) {
+    if ( $post_type == "collection" ) {
+      $args['rewrite']['slug'] = 'special-collections';
+    } elseif ($post_type == "post") {
+        $args['rewrite']['slug'] = 'library'; // This does not work for wordpress posts
+    }
+  
+    return $args;
+  }
+  add_filter( 'register_post_type_args', 'wp1482371_custom_post_type_args', 10, 2 );
