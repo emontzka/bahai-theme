@@ -13,7 +13,7 @@
 } ?>
 </a>
 <p class="author">By <?php the_author_meta( 'display_name'); ?></p>
-<p class="category-text " style="border-bottom: 1px solid black;"> <?php the_category( ' ' );  ?></p>
+<p class="category-text " > <?php the_category( ' ' );  ?></p>
 
 </div><!--bottom-align-->
 </div><!--col-lg post item-->

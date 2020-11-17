@@ -67,7 +67,7 @@ h3,
   line-height: 2.375rem;
   color: $darkblue;
   &.blue {
-    color: $darkblue;
+    color: #01567A;
   }
 }
 h4,
@@ -136,13 +136,14 @@ input[type='text'] {
   >p:first-child {
     &:first-letter {
       float: left;
-      font-size: 65px;
-      line-height: 60px;
-      padding-top: 7px;
+      font-size: 85px;
+      line-height: 56px;
+      padding-top: 26px;
       padding-right: 8px;
       padding-left: 3px;
-      overflow-x: hidden;
-      max-width: 100%;;
+      max-width: 100%;
+      padding-bottom:0;
+      margin-bottom: -5px;
     }
   }
 }

@@ -49,7 +49,7 @@ $current_cat = get_the_category($featured_ID );
                     <h4><?php echo $featured_subtitle; ?></h4>
                     <p><?php echo $featured_excerpt; ?></p>
                     <p class="author">By <?php echo $featured_author;  ?></p>
-                    <?php echo '<p class="category-text"  style="border-bottom: 1px solid black;"><a href="' . $cat_link . '" >' . $current_cat->name . '</a></p>'; ?>
+                    <?php echo '<p class="category-text"><a href="' . $cat_link . '" >' . $current_cat->name . '</a></p>'; ?>
                     </div>
 </a>
                 </div>
@@ -62,7 +62,7 @@ $current_cat = get_the_category($featured_ID );
 
 
 		<?php if (have_posts()): ?>
-      <div class="row border-bottom" style="border-bottom: 1px solid blue;">
+      <div class="row border-bottom" style="border-bottom: 1px solid #01567A;">
           <div class="col-lg-3 col-md-4 pad-r-40">
           <?php get_sidebar(  ); ?>
           </div>

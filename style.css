@@ -10948,6 +10948,9 @@ a:hover {
 .post-item {
   margin-bottom: 30px;
 }
+.post-item .category-text {
+  border-bottom: 1px solid #01567A;
+}
 
 .overlay {
   background: rgba(45, 112, 133, 0.75);
@@ -11154,7 +11157,7 @@ h3,
 }
 h3.blue,
 .h3.blue {
-  color: #123350;
+  color: #01567A;
 }
 
 h4,
@@ -11227,13 +11230,14 @@ input[type=text] {
 
 .first-text > p:first-child:first-letter {
   float: left;
-  font-size: 65px;
-  line-height: 60px;
-  padding-top: 7px;
+  font-size: 85px;
+  line-height: 56px;
+  padding-top: 26px;
   padding-right: 8px;
   padding-left: 3px;
-  overflow-x: hidden;
   max-width: 100%;
+  padding-bottom: 0;
+  margin-bottom: -5px;
 }
 
 @media (min-width: 992px) {
@@ -11406,9 +11410,18 @@ a.article-link:hover {
 .blog-featured .wp-post-image {
   margin-bottom: 50px;
 }
+.blog-featured .category-text {
+  border-bottom: 1px solid #01567A;
+}
 
 .post-actions {
   margin-top: 30px;
+}
+.post-actions a {
+  color: #01567a;
+}
+.post-actions a:hover, .post-actions a:visited {
+  color: #01567a;
 }
 
 .post-hero .category-text {
@@ -11476,9 +11489,34 @@ a.article-link:hover {
 
 .share-button-container .share-button {
   cursor: pointer;
+  position: relative;
+  margin-right: 40px;
+  display: inline-block;
+}
+.share-button-container .share-button i.fa-cheveron-down, .share-button-container .share-button i.fa-chevron-up {
+  position: absolute;
+  right: -18px;
+  top: 2px;
 }
 .share-button-container .share-button .fa-chevron-up {
   display: none;
+}
+.share-button-container .print-button {
+  position: relative;
+  margin-right: 50px;
+  display: inline-block;
+}
+.share-button-container .print-button i {
+  position: absolute;
+  right: -18px;
+}
+.share-button-container .save-button {
+  position: relative;
+  display: inline-block;
+}
+.share-button-container .save-button i {
+  position: absolute;
+  right: -18px;
 }
 .share-button-container .wp-share-button {
   display: none;
@@ -11685,6 +11723,7 @@ a.article-link:hover {
 }
 .secondary-nav li {
   color: #fbfcfc;
+  letter-spacing: 1.5px;
 }
 .secondary-nav li:hover {
   cursor: pointer;

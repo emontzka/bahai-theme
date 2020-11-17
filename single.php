@@ -40,11 +40,12 @@ get_header(); ?>
 			</div>
 			<div class="row  post-hero-row">
 				<div class="col-lg-3 col-md-4 caption-section">
-					<?php if (the_post_thumbnail_caption()): ?>
+					<?php if (has_post_thumbnail()): ?>
                 <hr class="top-rule">
 					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+					<hr class="bottom-rule">
 					<?php endif; ?>
-                    <hr class="bottom-rule">
+                    
 				</div>
 				<div class="col-lg-9 col-md-8 pad-l-65">
 				<?php bahai_post_thumbnail(); ?>

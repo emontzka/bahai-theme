@@ -21,16 +21,24 @@
                 $permalink = get_post_permalink($ID);
                 $thumb = get_the_post_thumbnail($ID);
 
-                echo '<div class="col-md-6 collection-item">';
-                echo '<a class"article-link" href="' . $permalink . '">';
-                echo '<div class="red-hover">' .
-                    get_the_post_thumbnail($ID, 'full', [
-                        'class' => 'img-responsive',
-                    ]) .
-                    '</div>';
-                echo '<h3>' . $collection->post_title . '</h3>';
-                echo '</a></div>';
-            endwhile;
+                // echo '<div class="col-md-6 collection-item">';
+                // echo '<a class"article-link" href="' . $permalink . '">';
+                // echo '<div class="red-hover">' .
+                //     get_the_post_thumbnail($ID, 'full', [
+                //         'class' => 'img-responsive',
+                //     ]) .
+                //     '</div>';
+                // echo '<h3>' . $collection->post_title . '</h3>';
+                // echo '</a></div>'; ?>
+
+                <div class="col-md-6 collection-item">
+                <a href="<?php echo $permalink; ?>" class="article-link">
+                <div class="article-thumb-container" style="background-image: url('<?php echo get_the_post_thumbnail_url( $ID ); ?>'); ">
+                </div>
+                <h3><?php echo $collection->post_title; ?></h3>
+                </a>
+                </div>
+            <?php endwhile;
             echo '</div>'; //row
         endif; ?>
 </section>

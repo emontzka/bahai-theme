@@ -35,14 +35,14 @@ $pdf = get_field('post_pdf'); ?>
           
           echo '<p class="author">By ' . $auth_name . '</p>'; 
           echo '<figcaption>' . $auth_desc . '</figcaption>'; 
-          $share_buttons = '<div class="share-button-container"><p class="author post-actions"><span class="share-button">Share<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></span>&nbsp;&nbsp;'; 
-          $share_buttons .= '<span class="print-button">Print<i class="fas fa-print"></i></span>&nbsp;&nbsp;';
+          $share_buttons = '<div class="share-button-container"><p class="author post-actions"><span class="share-button">Share<i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i></span>'; 
+          $share_buttons .= '<span class="print-button">Print<i class="fas fa-print"></i></span>';
           if ($pdf) {
-            $share_buttons .= '<a href="' . $pdf['url'] . '" target="_blank">Save<i class="fas fa-download"></i></a>';
+            $share_buttons .= '<a class="save-button" href="' . $pdf['url'] . '" target="_blank">Save<i class="fas fa-download"></i></a>';
           }
           $share_buttons .= '</p>';
           echo $share_buttons;
-          echo do_shortcode("[social_share_button themes='theme1']"); 
+          echo do_shortcode("[social_share_button themes='theme10']"); 
           echo '</div>';
 
     } ?>

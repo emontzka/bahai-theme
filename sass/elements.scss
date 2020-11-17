@@ -93,10 +93,19 @@ padding-bottom: 20px;
   .wp-post-image {
     margin-bottom: 50px;
   }
+  .category-text {
+    border-bottom: 1px solid #01567A;
+  }
 }
 
 .post-actions {
   margin-top: 30px;
+  a {
+    color: $blue;
+    &:hover, &:visited {
+      color: $blue;
+    }
+  }
 }
 
 .post-hero {
@@ -162,8 +171,33 @@ padding-bottom: 20px;
 .share-button-container {
   .share-button {
     cursor: pointer;
+    position: relative;
+    margin-right: 40px;
+    display: inline-block;
+    i.fa-cheveron-down, i.fa-chevron-up {
+      position: absolute;
+      right: -18px;
+      top: 2px;
+    }
     .fa-chevron-up {
       display: none;
+    }
+  }
+  .print-button {
+    position: relative;
+    margin-right: 50px;
+    display: inline-block;
+    i {
+      position: absolute;
+      right: -18px;
+    }
+  }
+  .save-button {
+    position: relative;
+    display: inline-block;
+    i {
+      position: absolute;
+      right: -18px;
     }
   }
   .wp-share-button {

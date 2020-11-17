@@ -107,6 +107,9 @@ a:hover {
 }
 .post-item {
   margin-bottom: 30px;
+  .category-text {
+    border-bottom: 1px solid #01567A;
+  }
 }
 .overlay {
   background: rgba(45,112,133,0.75);
